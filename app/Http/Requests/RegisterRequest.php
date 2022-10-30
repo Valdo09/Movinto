@@ -8,11 +8,13 @@ use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\Rule;
 class RegisterRequest extends FormRequest
 {
+    
     /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
      */
+  
     public function authorize()
     {
         return true;
@@ -25,6 +27,7 @@ class RegisterRequest extends FormRequest
      */
     public function rules()
     {
+        
         return [
             'email' => 'required|unique:users,email',
             'last_name' => 'required|max:255',
