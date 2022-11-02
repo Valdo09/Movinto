@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
 
-class Bien extends Model
+class Property extends Model
 {
     protected $fillable=[
         'superficie',
@@ -16,11 +16,14 @@ class Bien extends Model
         'details',
         'image',
         'status',
-        'isMeuble',
         'description',
         'image',
         'visite_virtuelle',
-        'type_id'
+        'type_id',
+        'room_id',
+        'home_id',
+        'land_id'
+
     ];
     public function type()
     {

@@ -19,7 +19,9 @@ use App\Http\Controllers\PropertyController;
 |
 */
 
-Route::get('/',[PropertyController::class,'show'])->name('propoerties.show');
+Route::get('/',[PropertyController::class,'index'])->name('properties.show');
+Route::get('/details/property/{property:id}',[PropertyController::class,'show'])->name('details');
+
 Route::group(['middleware' => ['guest']], function() {
     /**
      * Register Routes

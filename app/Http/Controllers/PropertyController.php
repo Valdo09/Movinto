@@ -3,13 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Bien;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Property;
 
 class PropertyController extends Controller
 {
-    public function show()
+    public function index()
     {
-        $properties=Bien::all();
+        $properties=Property::all();
         return view('welcome', compact('properties'));
+    }
+    public function show(Property $property)
+    {
+        return view('properties-details',compact('property'));
     }
 }
