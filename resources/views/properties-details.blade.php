@@ -62,7 +62,7 @@
              </li>
                
               @else
-              <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
+              <li class="nav-item active"><a href="/" class="nav-link">Accueil</a></li>
                   <li class="nav-item"><a href="{{route('login.show')}}" class="nav-link">Connexion</a></li>
                   <li class="nav-item"><a href="{{route('register.show')}}" class="nav-link">Inscription</a></li>
                   {{-- <li class="nav-item"><a href="/cars" class="nav-link">Nos voitures</a></li>
@@ -81,7 +81,7 @@
                  $car->image_1=str_replace('\\','/',$car->image_1);
               @endphp --}}
          
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('{{asset('images/bg_1.jpg')}}')"data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('{{asset('images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg')}}')"data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">

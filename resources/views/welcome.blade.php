@@ -60,9 +60,8 @@
 	        <ul class="navbar-nav ml-auto">
                 @if (Auth::user())
                 <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
-	            <!-- <li class="nav-item"><a href="{{route('cars')}}" class="nav-link">Nos voitures</a></li> -->
 
-              <li class="nav-item"><a href="{{route('locations.index')}}" class="nav-link">Mon activité</a></li>
+              {{-- <li class="nav-item"><a href="{{route('locations.index')}}" class="nav-link">Mon activité</a></li> --}}
 	       
                      @if (Auth::user()->role_id==1) 
                         <li class="nav-item">
@@ -95,7 +94,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap ftco-degree-bg" style="background-image: url('{{asset('images/bg_2.jpg')}}')" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('{{asset('images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg')}}')" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
@@ -240,7 +239,7 @@
     	</div>
     </section>
 
-    <!-- <section class="ftco-section ftco-about">
+    <section class="ftco-section ftco-about">
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/about.jpg')}}')">
@@ -248,18 +247,18 @@
 					<div class="col-md-6 wrap-about  ">
 	          <div class="heading-section heading-section-white pl-md-5">
 	          	<span class="subheading">A propos de nous</span>
-	            <h2 class="mb-4">Bienvenue chez Car Rent</h2>
+	            <h2 class="mb-4">Bienvenue chez Movinto</h2>
 
-	            <p>Vous souhaitez louer une voiture en aller simple ? L'entreprise Car Rent offre des locations de voiture pratiques en aller simple. Nous disposons d’une vaste sélection de véhicules pour les déplacements dans une ville, dans un pays ou depuis un aéroport. tendez vos jambes (et rangez votre tente et vos jouets sans effort) en profitant de nos voitures de location 5 à 7 placeso 
-                    </p>
-	            <p>Louez un véhicule avec Enterprise partout en Afrique dans nos agences en ville, en aéroports et en gares. Partir à la découverte de l’Afrique par vos propres moyens n’a jamais été aussi simple !
-                    </p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">Rechercher un véhicule</a></p>
+	            <p>
+              </p>
+	            <p>
+              </p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">Rechercher une chambre une maison ou une parcelle</a></p>
 	          </div>
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 <!-- 
 		<section class="ftco-section">
 			<div class="container">
@@ -406,20 +405,20 @@
   {{-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> --}}
 
 
-  <script src="{{URL::asset('jquery.min.js')}}"></script>
-  <script src="{{URL::asset('jquery-migrate-3.0.1.min.js')}}"></script>
-  <script src="{{URL::asset('popper.min.js')}}"></script>
-  <script src="{{URL::asset('bootstrap.min.js')}}"></script>
-  <script src="{{URL::asset('jquery.easing.1.3.js')}}"></script>
-  <script src="{{URL::asset('jquery.waypoints.min.js')}}"></script>
-  <script src="{{URL::asset('jquery.stellar.min.js')}}"></script>
-  <script src="{{URL::asset('owl.carousel.min.js')}}"></script>
-  <script src="{{URL::asset('jquery.magnific-popup.min.js')}}"></script>
-  <script src="{{URL::asset('aos.js')}}"></script>
-  <script src="{{URL::asset('jquery.animateNumber.min.js')}}"></script>
-  <script src="{{URL::asset('bootstrap-datepicker.js')}}"></script>
-  <script src="{{URL::asset('jquery.timepicker.min.js')}}"></script>
-  <script src="{{URL::asset('scrollax.min.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.min.js')}}"></script>
+  <script src="{{URL::asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{URL::asset('js/popper.min.js')}}"></script>
+  <script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.easing.1.3.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.waypoints.min.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.stellar.min.js')}}"></script>
+  <script src="{{URL::asset('js/owl.carousel.min.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{URL::asset('js/aos.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.animateNumber.min.js')}}"></script>
+  <script src="{{URL::asset('js/bootstrap-datepicker.js')}}"></script>
+  <script src="{{URL::asset('js/jquery.timepicker.min.js')}}"></script>
+  <script src="{{URL::asset('js/scrollax.min.js')}}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{{URL::asset('google-map.js')}}"></script>
   <script src="{{URL::asset('main.js')}}"></script>
