@@ -115,7 +115,10 @@
       </section>
       
       {{-- <div class="img rounded" style="background-image: url('{{url('/storage/'.$car->image_2)}}'));">wtf</div> --}}
-      {{-- <div class="container mt-4 w-100">     <img src="{{url('/storage/'.$->image_2)}}" alt="Ima" class="img rounded"></div> --}}
+      <div class="container mt-4 w-100">    
+        <iframe width='853' height='480' src='{{$property->visite_virtuelle}}' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+
+        </div>
  
           
   
@@ -273,7 +276,7 @@
             <div class="col-md-12 text-center">
   
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Ce site est conçu avec <i class="icon-heart color-danger" aria-hidden="true"></i> par <a href="#" target="_blank">Oswaldo Grimaud et Alim Allassane</a>
+    {{-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Ce site est conçu avec <i class="icon-heart color-danger" aria-hidden="true"></i> par <a href="#" target="_blank">Oswaldo Grimaud et Alim Allassane</a> --}}
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
