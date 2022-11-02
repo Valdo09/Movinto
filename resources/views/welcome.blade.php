@@ -1,258 +1,428 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Sat May 28 2022 08:32:40 GMT+0000 (Coordinated Universal Time) -->
-
-<html data-wf-domain="villar-template.webflow.io" data-wf-page="62315d8b1bac69305bd99388" data-wf-site="6224513e7396e88bd7269d7b">
-<!-- Mirrored from villar-template.webflow.io/properties by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 21:05:13 GMT -->
-<head>
-    <meta charset="utf-8"/><title>Properties</title><meta content="Properties" property="og:title"/><meta content="Properties" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="Webflow" name="generator"/>
-    <link href="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/css/villar-template.webflow.7f7afd707.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+  <head>
+    <title>Movinto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Lora:regular,500,600,700,italic","Karla:300,regular,500,600,700,300italic"]  }});</script>
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
-    <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624bf60eab86f021e3d01e4f_fevicon.png" rel="shortcut icon" type="image/x-icon"/>
-    <link href="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624bf628b737827d49054660_webclip.png" rel="apple-touch-icon"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-230103254-1"></script>
-    <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-230103254-1', {'anonymize_ip': false});</script><script type="text/javascript">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='plwebflow';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '1051997865736501');fbq('track', 'PageView');</script></head><body><div class="header-top-section wf-section"><div class="container w-container"><div class="header-top-wrapper"><div class="header-top-left-side"><div class="header-top-qusetion-block"><div class="question-text">Have a question?</div><a href="tel:+9985245784" class="phone-number">+9985 254 784</a></div></div><div class="header-top-right-side"><div class="text-block">Visit us: 9am to 10 pm ( Mon - Fri)</div></div></div></div></div><div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="header-section-two w-nav"><div class="container w-container"><a href="index.html" class="brand-logo w-nav-brand"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624bbacbfc9297b78e31f033_logo.png" loading="lazy" alt="Logo Image"/></a><nav role="navigation" class="nav-menu header-two w-nav-menu"><a href="index.html" class="nav-link w-nav-link">Home</a><a href="properties.html" aria-current="page" class="nav-link w-nav-link w--current">properties</a><div data-hover="false" data-delay="0" class="nav-link w-dropdown"><div class="nav-link dropdown-icon-block w-dropdown-toggle"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624ea700b8ebf708e2f2f928_arrow-down-black.svg" loading="lazy" width="12" height="12" alt="Angle Down Icon" class="dropdown-icon"/><div>Pages</div></div><nav class="dropdown-list w-dropdown-list"><a href="about.html" class="dropdown-link w-dropdown-link">About</a><a href="about-2.html" class="dropdown-link w-dropdown-link">About 2</a><a href="agent" class="dropdown-link w-dropdown-link">Agent</a><a href="service.html" class="dropdown-link w-dropdown-link">Services</a><a href="agency.html" class="dropdown-link w-dropdown-link">Agency</a><a href="city.html" class="dropdown-link w-dropdown-link">City</a><a href="faq" class="dropdown-link w-dropdown-link">Faq</a><a href="create-agency" class="dropdown-link w-dropdown-link">Create Agency</a></nav></div><a href="blog.html" class="nav-link w-nav-link">Blog</a><a href="contact.html" class="nav-link w-nav-link">Contact</a><div data-hover="false" data-delay="0" class="profile-dropdown w-dropdown"><div class="profile-picture-wrapper w-dropdown-toggle"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6224775154c4b86d3c200c73_login.png" loading="lazy" alt="Profile Image"/></div><nav class="dropdown-list w-dropdown-list"><a href="login" class="dropdown-link w-dropdown-link">Sign In</a><a href="register" class="dropdown-link w-dropdown-link">Registration</a></nav></div><a href="add-properties" class="button mobile-button w-nav-link">Add Property</a></nav><div class="mobile-menu-button w-nav-button"><div class="mobile-menu-icon w-icon-nav-menu"></div></div></div></div><div class="breadcrumb-section another-breadcrumb-section wf-section"><div class="container w-container"><div class="breadcrumb-wrapper another-breadcrumb-section"><div class="breadcrumb-content another-breadcrumb-section"><div class="breadcrumb-sub-heading another-breadcrumb-section">Our Properties<br/></div><h1 class="breadcrumb-main-heading another-breadcrumb-section"><span class="breadcrumb-span-text another-breadcrumb-section">All Properties</span></h1><p class="breadcrumb-details-content another-details-content">Huge number of propreties availabe here for buy and sell, also you can find here co-living property</p></div></div></div></div><div class="properties-filter-section wf-section"><div class="container w-container"></div></div><div class="all-properties-section wf-section"><div class="container w-container"><div fs-cmsfilter-element="filters" class="filter-wrapper-form w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="filter-inner-form"><div class="fiter-by-properties-cetagories"><label class="properties-cetagories-item w-radio"><input type="radio" name="Radio" id="For-Buy" value="For Buy" data-name="Radio" class="w-form-formradioinput properties-cetagories-radio-button w-radio-input"/><span fs-cmsfilter-field="Category" class="properties-cetagories-item-lable w-form-label" for="For-Buy">For Buy</span></label><label class="properties-cetagories-item w-radio"><input type="radio" name="Radio" id="For-Sale" value="For Sale" data-name="Radio" class="w-form-formradioinput properties-cetagories-radio-button w-radio-input"/><span fs-cmsfilter-field="Category" class="properties-cetagories-item-lable w-form-label" for="For-Sale">For Sale</span></label><label class="properties-cetagories-item w-radio"><input type="radio" name="Radio" id="For-Rent" value="For Rent" data-name="Radio" class="w-form-formradioinput properties-cetagories-radio-button w-radio-input"/><span fs-cmsfilter-field="Category" class="properties-cetagories-item-lable w-form-label" for="For-Rent">For Rent</span></label><label class="properties-cetagories-item last-item w-radio"><input type="radio" name="Radio" id="For-Co-Living" value="For Co-Living" data-name="Radio 2" class="w-form-formradioinput properties-cetagories-radio-button w-radio-input"/><span fs-cmsfilter-field="Category" class="properties-cetagories-item-lable w-form-label" for="For-Co-Living">For Co-Living</span></label></div><div class="filter-wrapper"><div class="filter-by-location"><div class="form-filter-wrapper"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/623ffde572ff2fc65415f76c_location.svg" loading="lazy" width="24" height="24" alt="Lable Icon" class="filter-image-icon"/><div class="lable-block"><label for="field" class="form-lable">Location</label><input type="text" class="search-field w-input" maxlength="256" name="field" fs-cmsfilter-tagcategory="Search" fs-cmsfilter-field="name, city, address" data-name="Field" placeholder="Choose Location....." fs-cmsfilter-debounce="400" id="field" required=""/></div></div></div><div class="filter-by-price-range"><div class="form-filter-wrapper lg-device-border-none"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/623ffde6915cf00646de373d_properties-price.svg" loading="lazy" width="24" height="24" alt="Lable Icon" class="filter-image-icon"/><div class="lable-block"><label class="form-lable">Price Range</label><div data-hover="false" data-delay="0" class="filter-dropdown-price-range w-dropdown"><div class="price-filter-dropdown w-dropdown-toggle"><div>Price Range</div><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624e9d9e4b88a02bb7a9b5a1_arrow-down-2.svg" loading="lazy" width="12" height="12" alt="Angle Down Icon" class="filter-icon"/></div><nav class="dropdown-filter-list w-dropdown-list"><div class="dropdown-price-wrapper"><input type="text" class="price-range-input w-input" maxlength="256" name="From" fs-cmsfilter-tagcategory="Price Range" fs-cmsfilter-field="price" data-name="From" fs-cmsfilter-range="from" placeholder="$0+" id="From" required=""/><div class="to-text">To</div><input type="text" class="price-range-input w-input" maxlength="256" name="To" fs-cmsfilter-tagcategory="Price Range" fs-cmsfilter-field="price" data-name="To" fs-cmsfilter-range="to" placeholder="$1,000,000+" id="To" required=""/></div></nav></div></div></div></div><div class="filter-by-property-size"><div class="form-filter-wrapper"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/623ffde6b4ae646286f5eaf2_properties-sizes.svg" loading="lazy" width="24" height="24" alt="Lable Icon" class="filter-image-icon"/><div class="lable-block"><label class="form-lable">Property Size</label><div data-hover="false" data-delay="0" class="filter-dropdown-property-size w-dropdown"><div class="price-filter-dropdown w-dropdown-toggle"><div>Property Size</div><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624e9d9e4b88a02bb7a9b5a1_arrow-down-2.svg" loading="lazy" width="12" height="12" alt="Angle Down Icon" class="filter-icon"/></div><nav class="dropdown-filter-list w-dropdown-list"><div class="dropdown-price-wrapper"><input type="text" class="price-range-input w-input" maxlength="256" name="From-2" fs-cmsfilter-tagcategory="Sq. Ft" fs-cmsfilter-field="square feet" data-name="From 2" fs-cmsfilter-range="from" placeholder="500" id="From-2" required=""/><div class="to-text">to</div><input type="text" class="price-range-input w-input" maxlength="256" name="To-2" fs-cmsfilter-tagcategory="Sq. Ft" fs-cmsfilter-field="square feet" data-name="To 2" fs-cmsfilter-range="to" placeholder="Any" id="To-2" required=""/></div></nav></div></div></div></div><div class="filter-by-property-type"><div class="form-filter-wrapper last-item"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/623ffde6915cf0f6dade373e_properties-category.svg" loading="lazy" width="24" height="24" alt="Lable Icon" class="filter-image-icon"/><div class="lable-block"><label class="form-lable">Property Type</label><div data-hover="false" data-delay="0" class="filter-dropdown-property-size w-dropdown"><div class="price-filter-dropdown w-dropdown-toggle"><div>Property Type</div><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624e9d9e4b88a02bb7a9b5a1_arrow-down-2.svg" loading="lazy" width="12" height="12" alt="Angle Down Icon" class="filter-icon"/></div><nav class="dropdown-filter-list w-dropdown-list"><div class="dropdown-price-wrapper properties-type"><div class="property-type-collection-list-wrapper w-dyn-list"><div role="list" class="property-type-collection-list w-dyn-items"><div role="listitem" class="property-type-collection-item w-dyn-item"><label class="w-checkbox properties-checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input properties-checkbox"/><span fs-cmsfilter-field="Property Type" class="properties-checkbox-lable w-form-label" for="checkbox">Villa</span></label></div><div role="listitem" class="property-type-collection-item w-dyn-item"><label class="w-checkbox properties-checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input properties-checkbox"/><span fs-cmsfilter-field="Property Type" class="properties-checkbox-lable w-form-label" for="checkbox">Houses</span></label></div><div role="listitem" class="property-type-collection-item w-dyn-item"><label class="w-checkbox properties-checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input properties-checkbox"/><span fs-cmsfilter-field="Property Type" class="properties-checkbox-lable w-form-label" for="checkbox">Appartment</span></label></div><div role="listitem" class="property-type-collection-item w-dyn-item"><label class="w-checkbox properties-checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input properties-checkbox"/><span fs-cmsfilter-field="Property Type" class="properties-checkbox-lable w-form-label" for="checkbox">Duplex</span></label></div></div></div></div></nav></div></div></div></div></div><div fs-cmsload-element="scroll-anchor" class="filter-header"><div class="filter-result-block"><div class="filter-tag-wrapper"><div fs-cmsfilter-element="tag-template" class="filter-tag-template"><div fs-cmsfilter-element="tag-text" class="filter-tag-text">Tag</div><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624ea0ee1671d9289493d1e8_corss.svg" loading="lazy" width="10" height="10" alt="Close Image Icon" fs-cmsfilter-element="tag-remove" class="tag-remove-image"/></div></div><div class="filter-result-right"><div class="result-count-text">Showing <span fs-cmsfilter-element="results-count" class="filter-item-number">0</span> out of <span fs-cmsfilter-element="items-count" class="filter-total-item-number">0</span> properties</div><a fs-cmsfilter-element="reset" href="#" class="tag-reset-button">Reset All</a><div class="filter-by-property-sort"><div data-hover="false" data-delay="0" fs-cmssort-element="trigger" class="filter-dropdown-property-size w-dropdown"><div class="price-filter-dropdown w-dropdown-toggle"><div>Sort by</div><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624e9d9e4b88a02bb7a9b5a1_arrow-down-2.svg" loading="lazy" width="12" height="12" alt="Angle Down Icon" class="filter-icon"/></div><nav class="dropdown-filter-list sort-wrap w-dropdown-list"><a href="#" fs-cmssort-field="price-desc" class="filter-nav w-dropdown-link">Price (High to Low)</a><a href="#" fs-cmssort-field="price-asc" class="filter-nav w-dropdown-link">Price (Low to High)</a><a href="#" fs-cmssort-field="bedrooms-desc" class="filter-nav w-dropdown-link">Bedrooms</a><a href="#" fs-cmssort-field="bathrooms-desc" class="filter-nav w-dropdown-link">Bathrooms</a><a href="#" fs-cmssort-field="square feet-desc" class="filter-nav w-dropdown-link">Square Feet</a></nav></div></div></div></div></div><div class="all-properties-wrapper"><div fs-cmssort-element="list" fs-cmsfilter-element="list" class="propertise-list-wrapper w-dyn-list"><div role="list" class="properties-wrapper w-dyn-items w-row"><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2f83ace35bc4f853fd_properties3.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225da2f83ace35bc4f853fd_properties3.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Buy</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Villa</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/esaac-dell-house" class="properties-title">Esaac Dell House.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, Sun Francisco</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 16, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1400</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">3</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">2</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2ed039fb77c75cd6b0_properties2.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225da2ed039fb77c75cd6b0_properties2.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Sale</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Duplex</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/gose-hill-mansion" class="properties-title">Gose Hill Mansion.</a><div fs-cmsfilter-field="city" class="properties-location">194 Mercer Street, Washington</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 16, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1600</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">5</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">4</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Co-Living</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Appartment</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/parriet-whillips-dungalow.html" class="properties-title">Parriet Whillips Dungalow.</a><div fs-cmsfilter-field="city" class="properties-location">5B Central Street, California</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 16, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1200</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">4</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">2</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2e1e4d4c756e13443a_properties4.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225da2e1e4d4c756e13443a_properties4.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Buy</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Houses</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/solly-nrown-house" class="properties-title">Solly Nrown House.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, Chicago</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 16, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">155300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1350</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">4</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">3</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225dd4e4858c9797c26fc1d_properties8.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225dd4e4858c9797c26fc1d_properties8.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Rent</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Duplex</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/darold-lloyd-estate" class="properties-title">Darold Lloyd Estate.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, Sun Francisco</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 16, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">155300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1200</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">3</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">2</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225dd4eb2da993199fe0d98_properties7.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225dd4eb2da993199fe0d98_properties7.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Rent</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Appartment</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/sinomen-plant-palace.html" class="properties-title">Sinomen plant Palace.</a><div fs-cmsfilter-field="city" class="properties-location">253 Montril Street, New York</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 8, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">155200</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1450</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">3</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">2</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225dd4e639e301a8ba460e8_properties6.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225dd4e639e301a8ba460e8_properties6.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Buy</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Houses</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/duplex-de-villa.html" class="properties-title">Duplex de Villa.</a><div fs-cmsfilter-field="city" class="properties-location">194 Mercer Street, 627 Broadway, New York</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 8, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1250</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">5</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">2</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">1</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Sale</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Villa</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/orchid-casel-de-paradise.html" class="properties-title">Orchid Casel de Paradise.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, Sun Francisco</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">September 22, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1230</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">4</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">3</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2ed039fb77c75cd6b0_properties2.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225dd50d8c9b88571f5a26b_properties5.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Rent</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Duplex</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/ruposibangla-de-parlosia.html" class="properties-title">Ruposibangla de parlosia.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, Sun Francisco</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">March 7, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1800</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">5</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">3</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2f83ace35bc4f853fd_properties3.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Sale</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Appartment</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/sinomen-studio-palace.html" class="properties-title">Sinomen Studio Palace.</a><div fs-cmsfilter-field="city" class="properties-location">194 Mercer Street, Washington D.C.</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">December 7, 2021</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1350</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">4</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">3</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225da2e1e4d4c756e13443a_properties4.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225dd50d8c9b88571f5a26b_properties5.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Co-Living</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Houses</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/elite-garden-resedence" class="properties-title">Elite Garden Resedence.</a><div fs-cmsfilter-field="city" class="properties-location">194 Mercer Street, Chicago</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">June 7, 2021</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">1230</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">4</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">3</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div><div role="listitem" class="single-properties w-dyn-item w-col w-col-4"><div class="single-properties-item"><div class="properties-image-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/622596ceb2da993727fc3dbe/6225dd50d8c9b88571f5a26b_properties5.jpg" alt="Properties Thumbnail Image " class="properties-image"/><a href="#" class="properties-image-preview w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2215d11288d64c96684_camera-icon.svg" alt="Camera Icon Image"/><div class="number-of-image">03</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://assets.website-files.com/622596ceb2da993727fc3dbe/6225d95e109d5321a3d02df0_properties1.jpg",
-      "type": "image"
-    }
-  ],
-  "group": "popular"
-}</script></a><a href="#" class="properties-image-video w-inline-block w-lightbox"><img loading="lazy" src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6225d2218ffdf40e95ee33dc_video-icon.svg" alt="Video Icon Image"/><div class="number-of-video">01</div><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtu.be/kDEgVDHR6Vk",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkDEgVDHR6Vk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkDEgVDHR6Vk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkDEgVDHR6Vk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "height": 480,
-      "width": 854,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kDEgVDHR6Vk/hqdefault.jpg",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script></a><div fs-cmsfilter-field="Category" class="properties-badge">For Co-Living</div><div fs-cmsfilter-field="Property Type" class="properties-badge home-type">Villa</div></div><div class="properties-description-content"><a fs-cmsfilter-field="name" href="listing/de-parasiya-appartment" class="properties-title">De Parasiya Appartment.</a><div fs-cmsfilter-field="city" class="properties-location">18B Central Street, 14 Block, California</div><div class="properties-added-date-block"><div class="properties-added-text">Added:</div><div class="properties-added-date">October 7, 2022</div></div><div class="properties-price-box"><div class="line-shape"></div><div class="properties-price-block"><div class="properties-price-text">Price: $</div><div fs-cmsfilter-field="price" class="properties-price-amount">255300</div></div></div><div class="properties-description"><div fs-cmsfilter-field="square feet" class="number-of-square-feet">2360</div><div class="square-feet-text">Sq.fit</div><div class="dash-shape"></div><div fs-cmsfilter-field="bedrooms" class="number-of-bedroom">5</div><div class="bed-text">Bed</div><div class="dash-shape"></div><div fs-cmsfilter-field="bathrooms" class="number-of-bathroom">5</div><div class="bath-text">Bath</div><div class="dash-shape"></div><div fs-cmsfilter-field="garages" class="number-of-garage">2</div><div class="garage-text">Garage</div></div></div></div></div></div><div role="navigation" aria-label="List" class="w-pagination-wrapper"></div></div></div><div fs-cmsfilter-element="empty" class="filter-empty-wrapper"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/62458fc4fa0f2281d6e5c556_error.png" loading="lazy" sizes="(max-width: 479px) 100vw, 200px" srcset="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/62458fc4fa0f2281d6e5c556_error-p-500.png 500w, https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/62458fc4fa0f2281d6e5c556_error.png 512w" alt="Error Image Icon" class="filter-empty-image"/><div class="filter-image-text">No properties found. Try editing your filters for best results.</div><a fs-cmsfilter-element="reset" href="#" class="tag-reset-button">Reset</a></div></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="blank-space-section wf-section"></div><div class="partner-wrapper-section wf-section"><div class="container w-container"><div class="partner-wrapper mt-0px"><div data-delay="3000" data-animation="slide" class="partner-slider-wrapper w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true"><div class="partner-slider-inner w-slider-mask"><div class="partner-slider-item w-slide"><a href="index.html" class="partner-item-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6229b4acf02d26831de2f336_brand1.png" loading="lazy" alt="Partner Logo Image" class="partner-logo-image"/></a></div><div class="partner-slider-item w-slide"><a href="index.html" class="partner-item-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6229b4ac7f87457a5fe999f2_brand2.png" loading="lazy" alt="Partner Logo Image" class="partner-logo-image"/></a></div><div class="partner-slider-item w-slide"><a href="index.html" class="partner-item-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6229b4acdbd31b3000f6a4e7_brand3.png" loading="lazy" alt="Partner Logo Image" class="partner-logo-image"/></a></div><div class="partner-slider-item w-slide"><a href="index.html" class="partner-item-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6229b4ac77814b8265e7df40_brand4.png" loading="lazy" alt="Partner Logo Image" class="partner-logo-image"/></a></div><div class="partner-slider-item w-slide"><a href="index.html" class="partner-item-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/6229b4ad1d28bfa68190f736_brand5.png" loading="lazy" alt="Partner Logo Image" class="partner-logo-image"/></a></div></div><div class="left-arrow-2 w-slider-arrow-left"><div class="w-icon-slider-left"></div></div><div class="right-arrow-2 w-slider-arrow-right"><div class="w-icon-slider-right"></div></div><div class="slide-nav-2 w-slider-nav w-round"></div></div></div></div></div><div class="blank-space-section wf-section"></div><div class="footer-section wf-section"><div class="container w-container"><div class="subscription-wrapper"><div class="subscription-text-side"><h3 class="subscription-heading">Are you a Home Owner?</h3><p class="subscription-details-text">Put your email address and get listed.</p></div><div class="subscription-form-side"><div class="subscription-form-block w-form"><form id="wf-form-Subscription" name="wf-form-Subscription" data-name="Subscription" method="get" class="subscription-form"><input type="email" class="email-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email here..." id="Email-3" required=""/><input type="submit" value="Get Listed" data-wait="Please wait..." class="button submit-button w-button"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="footer-wrapper"><div class="footer-single-block footer-logo-blojg"><div class="footer-logo-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/624bbacbfc9297b78e31f033_logo.png" loading="lazy" alt="Footer Logo Image" class="footer-logo-image"/></div><div class="footer-content"><p class="footer-details">Properties are most budget friendly so you have are find opportunity is main responsibility to clients</p><div class="footer-copyright-text small-device-none">© <a href="http://brandbes.com/" class="company-link">Brandbes.</a> All Rights Reserved - Privacy Policy</div></div></div><div class="footer-single-block"><div class="footer-title-block"><h3 class="footer-heading">Information<span class="color-shape">.</span></h3></div><div class="footer-link-block"><ul role="list" class="footer-link-inner w-list-unstyled"><li class="single-footer"><a href="about.html" class="single-footer-link">About us</a></li><li class="single-footer"><a href="properties.html" aria-current="page" class="single-footer-link w--current">Properties</a></li><li class="single-footer"><a href="contact.html" class="single-footer-link">Contact Us</a></li><li class="single-footer"><a href="city.html" class="single-footer-link">Cities</a></li><li class="single-footer"><a href="blog.html" class="single-footer-link">Blog Post</a></li></ul></div></div><div class="footer-single-block"><div class="footer-title-block"><h3 class="footer-heading">Support<span class="color-shape">.</span></h3></div><div class="footer-link-block"><ul role="list" class="footer-link-inner w-list-unstyled"><li class="single-footer"><a href="service.html" class="single-footer-link">Services</a></li><li class="single-footer"><a href="create-agency" class="single-footer-link">Create Agency</a></li><li class="single-footer"><a href="style-guide" class="single-footer-link">Style Guide</a></li><li class="single-footer"><a href="license" class="single-footer-link">License</a></li><li class="single-footer"><a href="changelog" class="single-footer-link">Changelog</a></li></ul></div></div><div class="footer-single-block address-block"><div class="footer-title-block"><h3 class="footer-heading">Address<span class="color-shape">.</span></h3></div><div class="footer-address-block"><div class="address-details">2104 Charmaine Lane Amarillo, New York</div></div><div class="footer-social-network-block"><a href="http://www.facebook.com/" target="_blank" class="social-single-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/622d87c612c779475f4f9c31_facebook-white.svg" loading="lazy" alt="Social Icon" height="12" width="12" class="facebook-icon"/></a><a href="http://www.twitter.com/" target="_blank" class="social-single-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/622d87c66ea962a9c875a5fb_twitter-white.svg" loading="lazy" alt="Social Icon" height="12" width="12" class="twitter-icon"/></a><a href="http://www.instagram.com/" target="_blank" class="social-single-link w-inline-block"><img src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/622d87c68253fbf3ca3f684c_instagram-white.svg" loading="lazy" width="12" height="12" alt="Social Icon" class="instagram-icom"/></a></div><div class="footer-copyright-text small-device-block">© <a href="http://brandbes.com/" class="company-link">Brandbes.</a> All Rights Reserved - Privacy Policy</div></div></div><div class="footer-bottom"><div class="footer-bottom-text">Powered by <a href="http://webflow.com/" target="_blank" class="bottom-link">Webflow</a></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6224513e7396e88bd7269d7b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://uploads-ssl.webflow.com/6224513e7396e88bd7269d7b/js/webflow.64ad63561.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--></body>
-<!-- Mirrored from villar-template.webflow.io/properties by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 21:05:13 GMT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+  
+    
+    <link rel="stylesheet" href="{{URL::asset('css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/aos.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/animate.css')}}">
+    
+    <link rel="stylesheet" href="{{URL::asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/magnific-popup.css')}}">
+
+    <link rel="stylesheet" href="{{URL::asset('css/ionicons.min.css')}}">
+
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/jquery.timepicker.css')}}">
+
+    
+    <link rel="stylesheet" href="{{URL::asset('css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
+    <style>
+      .item {
+    position:relative;
+    padding-top:20px;
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    right:-20px;
+    top:10px;
+    background:orange;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:20px;
+}
+    </style>
+
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="#">Mov<span>into</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+                @if (Auth::user())
+                <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
+	            <!-- <li class="nav-item"><a href="{{route('cars')}}" class="nav-link">Nos voitures</a></li> -->
+
+              <li class="nav-item"><a href="{{route('locations.index')}}" class="nav-link">Mon activité</a></li>
+	       
+                     @if (Auth::user()->role_id==1) 
+                        <li class="nav-item">
+                        <a href="/admin" class="nav-link">Espace admin</a>
+                        </li>
+                
+                      @endif 
+
+         <li class="nav-item ">
+           <form action="/logout" method="POST">
+            @csrf
+            <button type="submit" class="btn btn-primary">Déconnexion</button>
+          </form>
+         </li>
+           
+          @else
+          <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
+	          <li class="nav-item"><a href="{{route('login.show')}}" class="nav-link">Connexion</a></li>
+	          <li class="nav-item"><a href="{{route('register.show')}}" class="nav-link">Inscription</a></li>
+	          <!-- <li class="nav-item"><a href="/cars" class="nav-link">Nos voitures</a></li> -->
+	          <!-- <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li> -->
+             
+         @endif
+       
+        
+	          
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('{{asset('images/bg_2.jpg')}}')" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+          <div class="col-lg-8 ">
+          	<div class="text w-100 text-center mb-md-5 pb-md-5">
+	            <h1 class="mb-4">Trouvez une maison ou une chambre rapidement sans vous déplacer</h1>
+	         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <section class="ftco-section ftco-no-pt bg-light">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-12	featured-top">
+    				<div class="row no-gutters">
+	  					{{-- <div class="col-md-4 d-flex align-items-center">
+	  						<form action="{{route('locations.store')}}" class="request-form   bg-primary" method="POST">
+                  @csrf
+		          		<h2>Faites votre réservation</h2>
+			    				<div class="form-group">
+			    					<label for="" class="label">Lieu de prise</label>
+                   
+			    					<input type="text" class="form-control" placeholder="En ville, A l'aéroport etc" name="pickup_place">
+			    				</div>
+			    				<div class="form-group">
+			    					<label for="" class="label">Lieu de remise</label>
+			    					<input type="text" class="form-control" placeholder="En ville, A l'aéroport etc" name="dropoff_place">
+			    				</div>
+			    				<div class="d-flex">
+			    					<div class="form-group mr-2">
+			                <label for="" class="label">Date de location</label>
+			                <input type="date" class="form-control" id="book_pick_date" placeholder="Date" name="pickup_date">
+			              </div>
+			              <div class="form-group ml-2">
+			                <label for="" class="label">Date de remise</label>
+			                <input type="date" class="form-control" id="book_off_date" placeholder="Date" name="dropoff_date">
+			              </div>
+		              </div>
+		              <div class="form-group">
+		                <label for="" class="label">Heure de location</label>
+		                <input type="text" class="form-control" id="time_pick" placeholder="Heure">
+		              </div>
+			            <div class="form-group">
+			              <input type="submit" value="Louer une voiture maintenant" class="btn btn-secondary py-3 px-4">
+			            </div>
+			    			</form>
+	  					</div> --}}
+	  					<div class="col-md-12 d-flex align-items-center">
+	  						<div class="services-wrap rounded-right w-100">
+	  							 <h3 class="heading-section mb-4 text-center">Retrouvez rapidement une maison ou une chambre à louer/acheter</h3>
+	  							<!-- <div class="row d-flex mb-4">
+					          <div class="col-md-4 d-flex align-self-stretch  ">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Choisissez votre lieu de location</h3>
+				                </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch  ">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Choisissez le meilleur plan pour vous</h3>
+					              </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch  ">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Réservez votre voiture d'occasion</h3>
+					              </div>
+					            </div>      
+					          </div>
+					        </div> -->
+					        {{-- <p><a href="#" class="btn btn-primary py-3 px-4">Réservez la voiture qu'il vous faut</a></p> --}}
+	  						</div>
+	  					</div>
+	  				</div>
+				</div>
+  		</div>
+    </section>
+                
+
+    <section class="ftco-section ftco-no-pt bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center   mb-5">
+          	<span class="subheading">Qu'offrons-nous?</span>
+            <h2 class="mb-2">Nos meilleurs biens immobiliers</h2>
+          </div>
+        </div>
+    		<div class="row">
+          @foreach ($properties as $item)
+
+          
+            <div class="col-12 col-lg-4">
+                <div class="card mb-4 mb-lg-0  shadow item" >
+
+                    <span class="notify-badge">{{$item->status}}</span>
+                    <img class="card-img-top" src="{{asset('images/properties/'.$item->image)}}">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>{{$item->intitule}}</h5>
+                        </div>
+                        
+                        <p class="card-text"> {{$item->description}}</p>
+                            <div class="row">
+                              <div class="col-md-6">
+                               
+                                <div class="row">
+                                  <div class="col-md-6  ">
+                                    <a href=""><button class="btn btn-success">Réserver</button></a>
+
+                                  </div>
+                                  <div class="col-md-6">
+                                    <a href=" " class="text-right"><button class="btn btn-primary">Détails</button></a>
+
+                                  </div>
+                                </div>
+                                
+                              </div>
+                              <div class="col-md-6 mr-0 pr-0">
+                                <p>{{$item->loyer}} FCFA/ mois</p>
+                              </div>
+                            </div>
+                           
+        
+        
+                    
+                    </div>
+                </div>
+                </div>
+           
+                @endforeach
+        
+        </div>
+    	</div>
+    </section>
+
+    <!-- <section class="ftco-section ftco-about">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url('{{asset('images/about.jpg')}}')">
+					</div>
+					<div class="col-md-6 wrap-about  ">
+	          <div class="heading-section heading-section-white pl-md-5">
+	          	<span class="subheading">A propos de nous</span>
+	            <h2 class="mb-4">Bienvenue chez Car Rent</h2>
+
+	            <p>Vous souhaitez louer une voiture en aller simple ? L'entreprise Car Rent offre des locations de voiture pratiques en aller simple. Nous disposons d’une vaste sélection de véhicules pour les déplacements dans une ville, dans un pays ou depuis un aéroport. tendez vos jambes (et rangez votre tente et vos jouets sans effort) en profitant de nos voitures de location 5 à 7 placeso 
+                    </p>
+	            <p>Louez un véhicule avec Enterprise partout en Afrique dans nos agences en ville, en aéroports et en gares. Partir à la découverte de l’Afrique par vos propres moyens n’a jamais été aussi simple !
+                    </p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">Rechercher un véhicule</a></p>
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+<!-- 
+		<section class="ftco-section">
+			<div class="container">
+			    <div class="row justify-content-center mb-5">
+                    <div class="col-md-7 text-center heading-section  ">
+                        <span class="subheading">Services</span>
+                        <h2 class="mb-3">Nos récents services</h2>
+                    </div>
+            </div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="services services-2 w-100 text-center">
+            	            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+            	                <div class="text w-100">
+                                     <h3 class="heading mb-2">Une cérémonie de mariage</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non.</p>
+                                 </div>
+                            
+					</div>
+					
+					</div>
+					<div class="col-md-4">
+						<div class="services services-2 w-100 text-center">
+            	            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
+            	                <div class="text w-100">
+                                    <h3 class="heading mb-2">Transport depuis l'aéroport</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non</p>
+                                </div>
+                            
+					    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services services-2 w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+                                <div class="text w-100">
+                                    <h3 class="heading mb-2">Location pour un tour complet de ville</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non</p>
+                                </div>
+				
+				
+                           
+                    </div>
+				</div>
+				</div>
+			
+		</section> -->
+
+		
+
+
+
+   
+
+    <!-- <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="60">13</strong>
+                <span>Années  <br>d'expérience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="1090">43</strong>
+                <span>de voitures <br>au total</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="2590">151</strong>
+                <span>De clients  <br>Satisfaits</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    	</div>
+    </section>	 -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo">Mov<span>into</span></a></h2>
+              <p></p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class=" "><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class=" "><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class=" "><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">A propos</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Termes et conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Confidentialité &amp; Politique des cookies</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Support client</h2>
+              
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Avez-vous des questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Abomey-Calavi, carré 0x0x0x</span></li>
+	                <li><span><a href="#"><span class="icon icon-phone"></span><span class="text">+229 62 06 59 77</span></a></li>
+	                <li><span><a href="#"><span class="icon icon-envelope"></span><span class="text">theEntreprise@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Ce site est conçu avec <i class="icon-heart color-danger" aria-hidden="true"></i> par <a href="#" target="_blank">Oswaldo Grimaud et Alim Allassane</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  {{-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> --}}
+
+
+  <script src="{{URL::asset('jquery.min.js')}}"></script>
+  <script src="{{URL::asset('jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{URL::asset('popper.min.js')}}"></script>
+  <script src="{{URL::asset('bootstrap.min.js')}}"></script>
+  <script src="{{URL::asset('jquery.easing.1.3.js')}}"></script>
+  <script src="{{URL::asset('jquery.waypoints.min.js')}}"></script>
+  <script src="{{URL::asset('jquery.stellar.min.js')}}"></script>
+  <script src="{{URL::asset('owl.carousel.min.js')}}"></script>
+  <script src="{{URL::asset('jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{URL::asset('aos.js')}}"></script>
+  <script src="{{URL::asset('jquery.animateNumber.min.js')}}"></script>
+  <script src="{{URL::asset('bootstrap-datepicker.js')}}"></script>
+  <script src="{{URL::asset('jquery.timepicker.min.js')}}"></script>
+  <script src="{{URL::asset('scrollax.min.js')}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{URL::asset('google-map.js')}}"></script>
+  <script src="{{URL::asset('main.js')}}"></script>
+    
+  </body>
 </html>
