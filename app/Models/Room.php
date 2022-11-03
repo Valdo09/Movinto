@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Property;
 
 class Room extends Model
 {
@@ -17,4 +18,9 @@ class Room extends Model
 
 
     ];
+    public function property()
+    {
+        return $this->belongsTo(Property::class);
+
+    }
 }

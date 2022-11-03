@@ -43,9 +43,9 @@
                 <ul class="navbar-nav ml-auto">
                     @if (Auth::user())
                     <li class="nav-item "><a href="/" class="nav-link">Accueil</a></li>
-                    <li class="nav-item active"><a href="{{route('cars')}}" class="nav-link">Nos voitures</a></li>
+                    {{-- <li class="nav-item active"><a href="{{route('cars')}}" class="nav-link">Nos voitures</a></li>
                
-                    <li class="nav-item"><a href="{{route('locations.index')}} " class="nav-link">Mon activité</a></li>
+                    <li class="nav-item"><a href="{{route('locations.index')}} " class="nav-link">Mon activité</a></li> --}}
                
                          @if (Auth::user()->role_id==1) 
                             <li class="nav-item">

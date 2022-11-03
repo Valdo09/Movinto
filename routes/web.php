@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\Usercontroller;
 
 
 /*
@@ -43,6 +44,20 @@ Route::group(['middleware' => ['auth']], function() {
      */
     Route::get('/logout', [LogoutController::class,'perform'])->name('logout.perform');
     Route::get('/dashboard',[HomeController::class,'index'])->name('dashboard');
+
+});
+Route::prefix("admin")->middleware('admin')->group(function(){
+
+    Route::get('/properties/{property:type_id}',[PropertyController::class,'showAdmin'])->name('admin.properties.index');
+    Route::get('/properties/{property:type_id}/create', [PropertyController::class,'createProperty'])->name('admin.properties.create');
+    Route::post('/properties/rooms/store',[PropertyController::class,'saveRoom'])->name('admin.rooms.save');
+    Route::post('/properties/homes/store',[PropertyController::class,'saveHome'])->name('admin.homes.save');
+    Route::post('/properties/homes/store',[PropertyController::class,'saveLand'])->name('admin.lands.save');
+    Route::get('/users/owners',[UserController::class,'showOwners'])->name('admin.owners.show');
+    Route::get('/users/customers',[UserController::class,'showCustomers'])->name('admin.customers.show');
+    Route::get('/users',[Usercontroller::class,'showAllUsers'])->name('admin.users.show');
+
+
 
 });
 

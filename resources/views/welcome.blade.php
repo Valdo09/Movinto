@@ -65,16 +65,14 @@
 	       
                      @if (Auth::user()->role_id==1) 
                         <li class="nav-item">
-                        <a href="/admin" class="nav-link">Espace admin</a>
+                          <a href="{{route('dashboard')}}" class="nav-link">Espace admin</a>
                         </li>
                 
                       @endif 
 
          <li class="nav-item ">
-           <form action="/logout" method="POST">
-            @csrf
-            <button type="submit" class="btn btn-primary">Déconnexion</button>
-          </form>
+           <a href="{{ route('logout.perform') }}" class="nav-link btn btn-danger me-2 text-white shadow-0">Déconnexion</a>
+
          </li>
            
           @else
@@ -420,8 +418,8 @@
   <script src="{{URL::asset('js/jquery.timepicker.min.js')}}"></script>
   <script src="{{URL::asset('js/scrollax.min.js')}}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{{URL::asset('google-map.js')}}"></script>
-  <script src="{{URL::asset('main.js')}}"></script>
+  <script src="{{URL::asset('js/google-map.js')}}"></script>
+  <script src="{{URL::asset('js/main.js')}}"></script>
     
   </body>
 </html>
