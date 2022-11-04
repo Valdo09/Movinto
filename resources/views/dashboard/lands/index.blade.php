@@ -20,6 +20,7 @@
 
                    
                     <th>Statut</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,6 +42,29 @@
                    
                    <td>
                     <span class="badge badge-pending">{{$land->status}}</span>
+                   </td>
+                   <td>
+                    <a href="{{route('admin.lands.edit',$land->id)}}" class="btn btn-primary me-3"><i class="bi bi-pencil-fill"></i></a>
+                    <button class="btn btn-danger" onclick="document.getElementById('model-open-{{$land->id}}').style.display='block'"><i class="bi bi-trash-fill"></i></button>
+                    <form action="{{route('admin.lands.destroy',$land->id)}}" method="POST">
+                        @csrf
+                        @method("DELETE")
+                        <div class="modal" id="model-open-{{$land->id}}">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        <p>Etes-vous sûr de vouloir supprimer cette parcelle?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success">Confirmer</button>
+                                        <button type="button" class="btn btn-danger"  onclick="document.getElementById('model-open-{{$land->id}}').style.display='none'" data-bs-dismiss="modal">Annuler</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                    </td>
                  
                 </tr>

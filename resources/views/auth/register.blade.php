@@ -1,14 +1,14 @@
-@extends('layouts.auth-master')
+@extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <img src="{{asset('images/undraw_welcome_cats_thqn.png')}}" class="w-100 h-100">
+<div class="container py-5">
+    <div class="row my-5 bg-white d-flex justify-content-between p-5">
+        <div class="col-md-4">
+            {{-- <img src="{{asset('images/undraw_welcome_cats_thqn.png')}}" class="w-100 h-100"> --}}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div class="card">
-                <div class="card-header bg-success  text-white  ">{{ __('Inscrivez-vous ici') }}</div>
+                <div class="card-header bg-success  text-white  ">{{ __('Inscription') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register.perform') }}">
