@@ -95,7 +95,7 @@
                             <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li> --}}
                         </ul>
                     </li>
-                    
+
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Parcelles</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -254,25 +254,8 @@
                 </div>
             </div>
         </header>
-       
+
             @yield('content')
-       
-        
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-6">
-                        Copyright &copy; 2018 Ela Admin
-                    </div>
-                    <div class="col-sm-6 text-right">
-                        Designed by <a href="https://colorlib.com">Colorlib</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- /.site-footer -->
     </div>
     <!-- /#right-panel -->
 
@@ -499,6 +482,6 @@
             // Bar Chart #flotBarChart End
         });
     </script>
-    
+
 </body>
 </html>
