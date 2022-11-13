@@ -23,8 +23,11 @@ class CreateUsersTable extends Migration
             $table->timestamp('birthdate')->nullable();
             $table->string('password');
             $table->enum('sex',['Male','Female','Other','Not specified']);
-            $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('id')->on('roles');
+            $table->foreignId('role_id')
+                ->nullable()
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });
