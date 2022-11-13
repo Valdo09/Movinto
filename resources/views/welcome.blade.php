@@ -106,7 +106,7 @@
             <div class="row">
                 @foreach ($properties as $item)
                     <div class="col-12 col-lg-4">
-                        <div class="card mb-4 mb-lg-0  shadow item">
+                        <div class="card mb-4 mb-lg-0  shadow ">
 
                             <span class="notify-badge">{{ $item->status }}</span>
                             <img class="card-img-top" src="{{ asset('images/properties/' . $item->image) }}">

@@ -15,8 +15,8 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text">$<span class="count">23569</span></div>
-                                            <div class="stat-heading">Revenue</div>
+                                            <div class="stat-text"><span class="count">23569</span></div>
+                                            <div class="stat-heading">Ventes</div>
                                         </div>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@
                                     <div class="stat-content">
                                         <div class="text-left dib">
                                             <div class="stat-text"><span class="count">3435</span></div>
-                                            <div class="stat-heading">Sales</div>
+                                            <div class="stat-heading">Locations</div>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +51,8 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">349</span></div>
-                                            <div class="stat-heading">Templates</div>
+                                            <div class="stat-text"><span class="count">{{$proprietes_number}}</span></div>
+                                            <div class="stat-heading">Propriétés</div>
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">2986</span></div>
+                                            <div class="stat-text"><span class="count">{{$clients_number}}</span></div>
                                             <div class="stat-heading">Clients</div>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                 </div>
                 <!-- /Widgets -->
                 <!--  Traffic  -->
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
@@ -129,16 +129,16 @@
                             <div class="card-body"></div>
                         </div>
                     </div><!-- /# column -->
-                </div>
+                </div> --}}
                 <!--  /Traffic -->
                 <div class="clearfix"></div>
                 <!-- Orders -->
                 <div class="orders">
                     <div class="row">
-                        <div class="col-xl-8">
+                        <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="box-title">Orders </h4>
+                                    <h4 class="box-title">Locations/Ventes </h4>
                                 </div>
                                 <div class="card-body--">
                                     <div class="table-stats order-table ov-h">
@@ -237,7 +237,7 @@
                             </div> <!-- /.card -->
                         </div>  <!-- /.col-lg-8 -->
 
-                        <div class="col-xl-4">
+                        {{-- <div class="col-xl-4">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-12">
                                     <div class="card br-0">
@@ -260,12 +260,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- /.col-md-4 -->
+                        </div> <!-- /.col-md-4 --> --}}
                     </div>
                 </div>
                 <!-- /.orders -->
                 <!-- To Do and Live Chat -->
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-lg-6">
                         <div class="card">
                             <div class="card-body">
@@ -382,10 +382,10 @@
                             </div> <!-- /.card-body -->
                         </div><!-- /.card -->
                     </div>
-                </div>
+                </div> --}}
                 <!-- /To Do and Live Chat -->
                 <!-- Calender Chart Weather  -->
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-md-12 col-lg-4">
                         <div class="card">
                             <div class="card-body">
@@ -415,10 +415,10 @@
                             </div>
                         </div><!-- /.card -->
                     </div>
-                </div>
+                </div> --}}
                 <!-- /Calender Chart Weather -->
                 <!-- Modal - Calendar - Add New Event -->
-                <div class="modal fade none-border" id="event-modal">
+                {{-- <div class="modal fade none-border" id="event-modal">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -433,7 +433,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- /#event-modal -->
                 <!-- Modal - Calendar - Add Category -->
                 <div class="modal fade none-border" id="add-category">

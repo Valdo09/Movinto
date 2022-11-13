@@ -28,11 +28,9 @@
                     <td>  <span class="name">{{$customer->last_name}}</span> </td>
                     <td> <span class="product">{{$customer->email}}</span> </td>
                     <td><span class="">{{$customer->phone_number}}</span></td>
-                    <td>
-                        
-                    </td>
+                    
                    <td>{{$customer->birthdate}}</td>
-                   <td>{{$customer->sexe}}</td>
+                   <td>{{$customer->sex}}</td>
                    
                    {{-- <td>
                      <span class="badge badge-{{$room->isTiled?'complete':'danger'}}">{{$room->isTiled?'Oui':'Non'}}</span>
