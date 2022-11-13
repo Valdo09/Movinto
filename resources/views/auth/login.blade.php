@@ -8,35 +8,44 @@
                 <img src="{{ asset('images/undraw_Login_re_4vu2.png') }}" class="w-100 h-100" alt="">
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header bg-success text-white">{{ __('Connexion') }}</div>
+                <div class="card border-0">
+                    <div class="card-header bg-transparent text-dark
+                     text-center font-weight-bold font-size-36">{{ __('Connexion') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login.perform') }}">
                             @csrf
 
                             <div class="row mb-4">
-                                <label for="identifiant"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Adresse email') }}</label>
 
-                                <div class="col-md-6">
+                                <div class="col-12">
+                                    <label for="identifiant"
+                                           class="">{{ __('Adresse email') }}</label>
+                                </div>
+
+                                <div class="col-12">
                                     <input id="identifiant" type="text"
-                                        class="form-control @error('email') is-invalid @enderror" name="identifiant"
-                                        value="{{ old('email') }}" autocomplete="email" autofocus>
+                                           class="form-control @error('email') is-invalid @enderror" name="identifiant"
+                                           value="{{ old('email') }}" autocomplete="email" autofocus>
 
                                     @error('email')
-                                        <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
                                 </div>
+
                             </div>
 
                             <div class="row mb-4">
-                                <label for="password"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Mot de passe') }}</label>
 
-                                <div class="col-md-6">
+                                <div class="col-12">
+                                    <label for="password"
+                                           class="">{{ __('Mot de passe') }}</label>
+                                </div>
+
+
+                                <div class="col-12">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
                                         required autocomplete="current-password">
@@ -63,13 +72,13 @@
                             </div>
 
                             <div class="row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary w-100">
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success w-100">
                                         {{ __('Connexion') }}
                                     </button>
 
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        <a class="btn btn-success d-block" href="{{ route('password.request') }}">
                                             {{ __('Mot de passe oublié?') }}
                                         </a>
                                     @endif

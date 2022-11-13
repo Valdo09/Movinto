@@ -1,0 +1,245 @@
+
+/*Les fonts size*/
+
+
+/*-Les ecrans très petis*/
+
+.font-size-48{
+    font-size: 3rem !important;
+}
+
+.font-size-36 {
+    font-size: 2.25rem !important;
+}
+
+.font-size-28 {
+    font-size: 1.75rem !important;
+}
+
+.font-size-24 {
+    font-size: 1.5rem !important;
+}
+
+.font-size-20 {
+    font-size: 1.25rem !important;
+}
+
+.font-size-18 {
+    font-size: 1.125rem !important;
+}
+
+.font-size-16 {
+    font-size: 1rem !important;
+}
+
+.font-size-14 {
+    font-size: 0.875rem !important;
+}
+
+.font-size-12 {
+    font-size: .75rem !important;
+}
+
+.font-size-8 {
+    font-size: .50rem !important;
+}
+
+/*Les ecrans moins petits*/
+
+@media (min-width: 576px) {
+    .font-size-sm-48{
+        font-size: 3rem !important;
+    }
+
+    .font-size-sm-36 {
+        font-size: 2.25rem !important;
+    }
+
+    .font-size-sm-28 {
+        font-size: 1.75rem !important;
+    }
+
+    .font-size-sm-24 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-size-sm-20 {
+        font-size: 1.25rem !important;
+    }
+    .font-size-sm-18 {
+        font-size: 1.125rem !important;
+    }
+
+    .font-size-sm-16 {
+        font-size: 1rem !important;
+    }
+
+    .font-size-sm-14 {
+        font-size: 0.875rem !important;
+    }
+
+    .font-size-sm-12 {
+        font-size: .75rem !important;
+    }
+    .font-size-8 {
+        font-size: .50rem !important;
+    }
+
+}
+
+/*Les tablettes*/
+@media (min-width: 768px) {
+    .font-size-md-48{
+        font-size: 3rem !important;
+    }
+
+    .font-size-md-36 {
+        font-size: 2.25rem !important;
+    }
+
+    .font-size-md-28 {
+        font-size: 1.75rem !important;
+    }
+
+    .font-size-md-24 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-size-md-20 {
+        font-size: 1.25rem !important;
+    }
+
+    .font-size-md-18 {
+        font-size: 1.125rem !important;
+    }
+
+    .font-size-md-16 {
+        font-size: 1rem !important;
+    }
+
+    .font-size-md-14 {
+        font-size: 0.875rem !important;
+    }
+
+    .font-size-md-12 {
+        font-size: .75rem !important;
+    }
+
+}
+
+/*Les petits ordinateurs portables*/
+
+@media (min-width: 992px) {
+    .font-size-lg-48{
+        font-size: 3rem !important;
+    }
+
+    .font-size-lg-36 {
+        font-size: 2.25rem !important;
+    }
+
+    .font-size-lg-28 {
+        font-size: 1.75rem !important;
+    }
+
+    .font-size-lg-24 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-size-lg-20 {
+        font-size: 1.25rem !important;
+    }
+    .font-size-lg-18 {
+        font-size: 1.125rem !important;;
+    }
+
+    .font-size-lg-16 {
+        font-size: 1rem !important;
+    }
+
+    .font-size-lg-14 {
+        font-size: 0.875rem !important;
+    }
+
+    .font-size-lg-12 {
+        font-size: .75rem !important;
+    }
+}
+
+/*Les ordinateurs portables moyens*/
+@media (min-width: 1200px) {
+    .font-size-xl-48{
+        font-size: 3rem !important;
+    }
+
+    .font-size-xl-36 {
+        font-size: 2.25rem !important;
+    }
+
+    .font-size-xl-28 {
+        font-size: 1.75rem !important;
+    }
+
+    .font-size-xl-24 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-size-xl-20 {
+        font-size: 1.25rem !important;
+    }
+    .font-size-xl-18 {
+        font-size: 1.125rem !important;;
+    }
+
+    .font-size-xl-16 {
+        font-size: 1rem !important;
+    }
+
+    .font-size-xl-14 {
+        font-size: 0.875rem !important;
+    }
+
+    .font-size-xl-12 {
+        font-size: .75rem !important;
+    }
+
+}
+
+/*Les grands écrans*/
+@media (min-width: 1400px) {
+    .font-size-xxl-48{
+        font-size: 3rem !important;
+    }
+
+    .font-size-xxl-36 {
+        font-size: 2.25rem !important;
+    }
+
+    .font-size-xxl-28 {
+        font-size: 1.75rem !important;
+    }
+
+    .font-size-xxl-24 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-size-xxl-20 {
+        font-size: 1.25rem !important;
+    }
+
+    .font-size-xxl-18 {
+        font-size: 1.125rem !important;
+    }
+
+    .font-size-xxl-16 {
+        font-size: 1rem !important;
+    }
+
+    .font-size-xxl-14 {
+        font-size: 0.875rem !important;
+    }
+
+    .font-size-xxl-12 {
+        font-size: .75rem !important;
+    }
+}

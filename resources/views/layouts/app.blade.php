@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/icomoon.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/admin.css') }}">
     <style>
         .item {
             position: relative;
