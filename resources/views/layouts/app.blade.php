@@ -66,9 +66,8 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     @if (Auth::user())
-                        <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
                         <li class="nav-item "><a href="#" class="nav-link">Nos offres</a></li>
-
+                        <li class="nav-item {{ request()->is('/') ? 'active' : '' }}"><a href="/" class="nav-link">Accueil</a></li>
                          <li class="nav-item"><a href="" class="nav-link">Mon activité</a></li>
 
                         @if (Auth::user()->role_id == 1)
@@ -89,9 +88,9 @@
 
                         </li>
                     @else
-                        <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
-                        <li class="nav-item"><a href="{{ route('login.show') }}" class="nav-link">Connexion</a></li>
-                        <li class="nav-item"><a href="{{ route('register.show') }}" class="nav-link">Inscription</a>
+                        <li class="nav-item {{request()->is('/') ? 'active' : '' }}"><a href="/" class="nav-link">Accueil</a></li>
+                        <li class="nav-item {{request()->is('login') ? 'active' : '' }}" ><a href="{{ route('login.show') }}" class="nav-link">Connexion</a></li>
+                        <li class="nav-item {{request()->is('register') ? 'active' : '' }}" ><a href="{{ route('register.show') }}" class="nav-link">Inscription</a>
                         </li>
                         <!-- <li class="nav-item"><a href="/cars" class="nav-link">Nos voitures</a></li> -->
                         <!-- <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li> -->
@@ -187,6 +186,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="{{ URL::asset('js/google-map.js') }}"></script>
     <script src="{{ URL::asset('js/main.js') }}"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
