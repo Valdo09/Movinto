@@ -1,6 +1,9 @@
 
 /*Les fonts size*/
-
+:root{
+    --movinto-green: #01d28e;
+    --movinto-black:#000000;
+}
 
 /*-Les ecrans très petis*/
 
@@ -242,4 +245,29 @@
     .font-size-xxl-12 {
         font-size: .75rem !important;
     }
+}
+
+.notify-badge{
+    font-size: 16px !important;
+    right: 1rem !important;
+    background: var(--movinto-green) !important;
+}
+
+.right-panel header.header{
+background: var(--movinto-green);
+}
+
+.right-panel .navbar-header{
+    background: var(--movinto-green);
+}
+
+aside.left-panel{
+    background: var(--movinto-black);
+}
+
+.bg-movinto-black{
+    background: var(--movinto-black);
+}
+.movinto-black{
+    color: var(--movinto-black);
 }

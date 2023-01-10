@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard|Movinto</title>
+    <title>Dashboard | Movinto</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +24,7 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{URL::asset('css/dashboard/css/lib/chosen/chosen.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('css/admin.css') }}">
 
    <style>
     #weatherWidget .currentDesc {
@@ -66,11 +67,11 @@
 <body>
     <!-- Left Panel -->
     <aside id="left-panel" class="left-panel">
-        <nav class="navbar navbar-expand-sm navbar-default">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-movinto-black navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="/dashboard"><i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                        <a href="/dashboard " ><i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Propriétés</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
@@ -132,7 +133,7 @@
                             <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
                         </ul>
                     </li> --}}
-                    <li class="menu-title">Utilisateurs</li><!-- /.menu-title -->
+                    <li class="menu-title">Utilisateurs</li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list"></i>Liste</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -154,9 +155,9 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">Mov<span>into</span></a>
+                    <a class="navbar-brand text-uppercase font-weight-bold movinto-black" href="/">Mov<span>into</span></a>
 
-                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars movinto-black"></i></a>
                 </div>
             </div>
             <div class="top-right">

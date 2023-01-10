@@ -116,26 +116,28 @@
                                 </div>
 
                                 <p class="card-text"> {{ $item->description }}</p>
-                                <div class="row">
-                                    <div class="col-md-6">
+
+                                <div class=" mr-0 pr-0">
+                                    <p class="font-weight-bold color-red">{{ $item->loyer }} FCFA/ mois</p>
+                                </div>
+
+
+
+                                <div class="col-12">
 
                                         <div class="row">
-                                            <div class="col-md-6  ">
-                                                <a href=""><button class="btn btn-success">Réserver</button></a>
-
+                                            <div class=" col-6 ">
+                                                <a href="" class="btn btn-success d-block w-100">Réserver</a>
                                             </div>
-                                            <div class="col-md-6">
-                                                <a href=" {{ route('details', $item->id) }}" class="text-right"><button
-                                                        class="btn btn-primary">Détails</button></a>
+                                            <div class="col-6">
+                                                <a href=" {{ route('details', $item->id) }}" class="btn btn-primary d-block w-100">Détails</a>
 
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 mr-0 pr-0">
-                                        <p>{{ $item->loyer }} FCFA/ mois</p>
-                                    </div>
-                                </div>
+
+
 
 
 
