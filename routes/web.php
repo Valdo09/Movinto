@@ -20,6 +20,16 @@ use App\Http\Controllers\Usercontroller;
 |
 */
 
+Route::get('/frontest', function (){
+    return view('frontend.home');
+});
+
+Route::get('/backtest', function (){
+    return view('backend.homes.index');
+});
+
+Route::get('/accueil',[PropertyController::class,'index'])->name('accueil');
+
 Route::get('/',[PropertyController::class,'index'])->name('properties.show');
 Route::get('/details/property/{property:id}',[PropertyController::class,'show'])->name('details');
 
