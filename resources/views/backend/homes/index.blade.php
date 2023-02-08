@@ -11,6 +11,7 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Maisons</li>
                     <li class="breadcrumb-item active" aria-current="page">Liste des maisons</li>
                 </ol>
             </nav>
@@ -62,13 +63,6 @@
                 <th class="border-gray-200">Intitulé</th>
                 <th class="border-gray-200">Adresse</th>
                 <th class="border-gray-200">NbChambres</th>
-                <th class="border-gray-200">Loyer</th>
-                <th class="border-gray-200">Prix</th>
-                <th class="border-gray-200">Détails</th>
-                <th class="border-gray-200">Image</th>
-                <th class="border-gray-200">Description</th>
-                <th class="border-gray-200">Meublé</th>
-                <th class="border-gray-200">Carrelé</th>
                 <th class="border-gray-200">Peint</th>
                 <th class="border-gray-200">Statut</th>
                 <th class="border-gray-200">Actions</th>

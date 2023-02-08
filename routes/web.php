@@ -24,8 +24,16 @@ Route::get('/frontest', function (){
     return view('frontend.home');
 });
 
-Route::get('/backtest', function (){
-    return view('backend.homes.index');
+Route::get('/backend', function (){
+    return view('backend.dashboard');
+});
+Route::get('/backend/show', function (){
+    return view('backend.rooms.show');
+});
+Route::get('/backend/create', function (){
+    return view('backend.rooms.create');
+});Route::get('/backend/edit', function (){
+    return view('backend.rooms.edit');
 });
 
 Route::get('/accueil',[PropertyController::class,'index'])->name('accueil');
