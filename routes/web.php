@@ -19,6 +19,13 @@ use App\Http\Controllers\Usercontroller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/template/register', function (){
+    return view('authentification.register');
+});
+
+Route::get('/template/login', function (){
+    return view('authentification.login');
+});
 
 Route::get('/frontest', function (){
     return view('frontend.home');
@@ -32,9 +39,11 @@ Route::get('/backend/show', function (){
 });
 Route::get('/backend/create', function (){
     return view('backend.rooms.create');
-});Route::get('/backend/edit', function (){
+});
+Route::get('/backend/edit', function (){
     return view('backend.rooms.edit');
 });
+
 
 Route::get('/accueil',[PropertyController::class,'index'])->name('accueil');
 
