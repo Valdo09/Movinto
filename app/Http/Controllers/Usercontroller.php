@@ -22,4 +22,14 @@ class Usercontroller extends Controller
         
         return view('dashboard.users.index',compact('users'));
     }
+    public function changeCustomerToOwner($id){
+        $customer=User::where('id',$id)->update(['role_id'=>2]);
+        return redirect()->route('admin.customers.show')->with('success','Utilisateur modifié avec succès');
+
+
+    }
+    public function changeOwnerToCustomer($id){
+        $ownerr=User::where('id',$id)->update(['role_id'=>3]);
+        return redirect()->route('admin.owners.show')->with('success','Utilisateur modifié avec succès');
+    }
 }

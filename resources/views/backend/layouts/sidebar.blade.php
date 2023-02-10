@@ -55,7 +55,7 @@
                 </a>
             </li>
             <li class="nav-item  active ">
-                <a href="pages/dashboard/dashboard.html" class="nav-link">
+                <a href="/dashboard" class="nav-link">
           <span class="sidebar-icon">
             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path
                     d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path
@@ -87,12 +87,12 @@
                      id="submenu-rooms" aria-expanded="false">
                     <ul class="flex-column nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/404.html">
+                            <a class="nav-link" href="{{route('admin.properties.index',1)}}">
                                 <span class="sidebar-text">Liste des chambres</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/500.html">
+                            <a class="nav-link" href="{{route('admin.properties.create',1)}}">
                                 <span class="sidebar-text">Ajouter une chambre</span>
                             </a>
                         </li>
@@ -121,12 +121,12 @@
                      id="submenu-homes" aria-expanded="false">
                     <ul class="flex-column nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/404.html">
+                            <a class="nav-link" href="{{route('admin.properties.index',2)}}">
                                 <span class="sidebar-text">Liste des maisons</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/500.html">
+                            <a class="nav-link" href="{{route('admin.properties.create',2)}}">
                                 <span class="sidebar-text">Ajouter une maison</span>
                             </a>
                         </li>
@@ -155,12 +155,12 @@
                      id="submenu-lands" aria-expanded="false">
                     <ul class="flex-column nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/404.html">
+                            <a class="nav-link" href="{{route('admin.properties.index',3)}}">
                                 <span class="sidebar-text">Liste des parcelles</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/examples/500.html">
+                            <a class="nav-link" href="{{route('admin.properties.create',3)}}">
                                 <span class="sidebar-text">Ajouter une parcelle</span>
                             </a>
                         </li>
@@ -192,17 +192,17 @@
                      id="submenu-components" aria-expanded="false">
                     <ul class="flex-column nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="pages/components/forms.html">
+                            <a class="nav-link" href="{{route('admin.users.show')}}">
                                 <span class="sidebar-text">Tous les utilisateurs</span>
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="pages/components/modals.html">
+                            <a class="nav-link" href="{{route('admin.owners.show')}}">
                                 <span class="sidebar-text">Les propriétaires</span>
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="pages/components/typography.html">
+                            <a class="nav-link" href="{{route('admin.customers.show')}}">
                                 <span class="sidebar-text">Les clients</span>
                             </a>
                         </li>
@@ -211,7 +211,7 @@
             </li>
             <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
             <li class="nav-item">
-                <a href="" target="_blank"
+                <a href="/logout" target="_blank"
                    class="nav-link d-flex align-items-center">
           <span class="sidebar-icon">
                <svg class="icon icon-xs me-2 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -219,7 +219,7 @@
                                                              stroke-width="2"
                                                              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
           </span>
-                    <span class="sidebar-text">Deconnexion </span>
+                    <span class="sidebar-text">Déconnexion </span>
                 </a>
             </li>
 

@@ -1,246 +1,193 @@
-@extends('layouts.dashboard')
-@section('content')
-<div class="content">
-    <div class="animated fadeIn">
+@extends('backend.layouts.template')
 
-        <div class="">
-            <form action="{{route('admin.rooms.save')}}" class="row" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="col-xs-6 col-sm-6">
-                    <div class="card">
-                        <div class="card-header">
-                            {{-- <strong>Masked Input</strong> <small> Small Text Mask</small> --}}
-                        </div>
-                        <div class="card-body card-block">
-                            <div class="form-group">
-                                <label class=" form-control-label">Intitulé</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-calendar"></i></div> --}}
-                                    <input class="form-control" name="intitule" type="text">
-                                </div>
-                                <small class="form-text text-muted">ex. 1 chambre salon à</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Adresse</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-phone"></i></div> --}}
-                                    <input class="form-control" name="adress" type="text">
-                                </div>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Superficie</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-phone"></i></div> --}}
-                                    <input class="form-control" name="superficie" type="text">
-                                </div>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Loyer/Prix</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-usd"></i></div> --}}
-                                    <input class="form-control" type="number" name="rent">
-                                </div>
-                                <small class="form-text text-muted">15000</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Description</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-male"></i></div> --}}
-                                    <input class="form-control" type="text" name="description">
-                                </div>
-                                <small class="form-text text-muted">ex. 999-99-9999</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Image</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-asterisk"></i></div> --}}
-                                    <input class="form-control" type="file" name="photo">
-                                </div>
-                                <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Lien de la visite virtuelle</label>
-                                <div class="input-group">
-                                    {{-- <div class="input-group-addon"><i class="fa fa-credit-card"></i></div> --}}
-                                    <input class="form-control" type="text" name="visite_virtuelle">
-                                </div>
-                                <small class="form-text text-muted">ex. 9999 9999 9999 9999</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6">
-                    <div class="card">
-                        <div class="card-header">
-                            {{-- <strong class="card-title">Standard Select</strong> --}}
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label class=" form-control-label">Meublé</label>
-
-                                <select data-placeholder="Meublé" class="standardSelect" tabindex="1" name="furnished">
-                                    <option value="" label="default"></option>
-                                    <option value="Yes">Oui</option>
-                                    <option value="No">Non</option>
-                                    
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Carrelé</label>
-
-                                <select data-placeholder="Carrelé" class="standardSelect" tabindex="1" name="tiled">
-                                    <option value="" label="default"></option>
-                                    <option value="Yes">Oui</option>
-                                    <option value="No">Non</option>
-                                    
-                                </select>
-
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Peint</label>
-
-                                <select data-placeholder="Carrelé" class="standardSelect" tabindex="1" name="painted">
-                                    <option value="" label="default"></option>
-                                    <option value="Yes">Oui</option>
-                                    <option value="No">Non</option>
-                                    
-                                </select>
-                                
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">A louer/vendre</label>
-
-                                <select data-placeholder="A louer/vendre" class="standardSelect" tabindex="1" name="status">
-                                    <option value="" label="default"></option>
-                                    <option value="A louer">A louer</option>
-                                    <option value="A vendre">A vendre</option>
-                                    
-                                </select>
-                                
-                            </div>
-                            <div class="form-group">
-                                <label class=" form-control-label">Autres</label>
-
-                                <textarea name="details" id="" cols="30" rows="8" class="form-control"></textarea>
-                                
-                            </div>
-                         
-                            <div class="form-group">
-                                <label class=" form-control-label">Propriétaire</label>
-
-                                <select data-placeholder="Propriétaire" class="standardSelect" tabindex="1" name="owner_id">
-                                    <option value="" label="default"></option>
-                                    @foreach ($owners as $owner)
-                                    <option value="{{$owner->id}}" label="" >{{$owner->first_name." ".$owner->last_name}}</option>
-                                    @endforeach
-                                    
-                                </select>
-                                
-                            </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Enregistrer" class="btn btn-primary py-3 px-5">
-                  </div>
-            </form>
-            
-
-            
-
-            {{-- <div class="card">
-                <div class="card-header">
-                    <strong class="card-title">Multi Select</strong>
-                </div>
-                <div class="card-body">
-
-                  <select data-placeholder="Choose a country..." multiple class="standardSelect">
-                    <option value="" label="default"></option>
-                    <option value="United States">United States</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Afghanistan">Afghanistan</option>
-                    <option value="Aland Islands">Aland Islands</option>
-                    <option value="Albania">Albania</option>
-                    <option value="Algeria">Algeria</option>
-                    <option value="American Samoa">American Samoa</option>
-                    <option value="Andorra">Andorra</option>
-                    <option value="Angola">Angola</option>
-                    <option value="Anguilla">Anguilla</option>
-                    <option value="Antarctica">Antarctica</option>
-                </select>
-
-            </div> --}}
+@section('header')
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+        <div class="d-block mb-4 mb-md-0">
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                    <li class="breadcrumb-item">
+                        <a href="#">
+                            <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item " aria-current="page">Chambres</li>
+                    <li class="breadcrumb-item active" aria-current="page">Ajouter une chambre</li>
+                </ol>
+            </nav>
+            <h2 class="h4">Ajouter une chambre</h2>
         </div>
 
-        {{-- <div class="card">
-            <div class="card-header">
-                <strong class="card-title">Multi Select with Groups</strong>
+    </div>
+@endsection
+
+@section('content')
+<form action="{{route('admin.rooms.save')}}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <div class="row py-4">
+        <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow">
+                <div class="card-header border-gray-100 d-flex justify-content-between align-items-center">
+                    <h2 class="h6 mb-0">Informations générales</h2>
+
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Intitulé</label>
+                                <input type="text" name="intitule" id="" class="form-control">
+                                <small class="form-text text-muted">ex. 1 chambre salon à</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Adresse</label>
+                                <input type="text" name="adress" id="" class="form-control">
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Superficie</label>
+                                <input type="text" name="superficie" id="" class="form-control">
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Loyer/Prix</label>
+                                <input type="number" name="rent" id="" class="form-control">
+                                <small class="form-text text-muted">15000</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Description</label>
+                                <input type="text" name="description" id="" class="form-control">
+                                <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Image</label>
+                                <input type="file" name="property_photo" id="" class="form-control">
+                                <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Lien de la visite virtuelle</label>
+                                <input type="text" name="visite_virtuelle" id="" class="form-control">
+                                <small class="form-text text-muted">ex. 9999 9999 9999 9999</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow">
+                <div class="card-header border-gray-100 d-flex justify-content-between align-items-center">
+                    <h2 class="h6 mb-0">Autres informations</h2>
 
-              <select data-placeholder="Your Favorite Football Team" multiple class="standardSelect" tabindex="5">
-                <option value="" label="default"></option>
-                <optgroup label="NFC EAST">
-                  <option>Dallas Cowboys</option>
-                  <option>New York Giants</option>
-                  <option>Philadelphia Eagles</option>
-                  <option>Washington Redskins</option>
-              </optgroup>
-              <optgroup label="NFC NORTH">
-                  <option>Chicago Bears</option>
-                  <option>Detroit Lions</option>
-                  <option>Green Bay Packers</option>
-                  <option>Minnesota Vikings</option>
-              </optgroup>
-              <optgroup label="NFC SOUTH">
-                  <option>Atlanta Falcons</option>
-                  <option>Carolina Panthers</option>
-                  <option>New Orleans Saints</option>
-                  <option>Tampa Bay Buccaneers</option>
-              </optgroup>
-              <optgroup label="NFC WEST">
-                  <option>Arizona Cardinals</option>
-                  <option>St. Louis Rams</option>
-                  <option>San Francisco 49ers</option>
-                  <option>Seattle Seahawks</option>
-              </optgroup>
-              <optgroup label="AFC EAST">
-                  <option>Buffalo Bills</option>
-                  <option>Miami Dolphins</option>
-                  <option>New England Patriots</option>
-                  <option>New York Jets</option>
-              </optgroup>
-              <optgroup label="AFC NORTH">
-                  <option>Baltimore Ravens</option>
-                  <option>Cincinnati Bengals</option>
-                  <option>Cleveland Browns</option>
-                  <option>Pittsburgh Steelers</option>
-              </optgroup>
-              <optgroup label="AFC SOUTH">
-                  <option>Houston Texans</option>
-                  <option>Indianapolis Colts</option>
-                  <option>Jacksonville Jaguars</option>
-                  <option>Tennessee Titans</option>
-              </optgroup>
-              <optgroup label="AFC WEST">
-                  <option>Denver Broncos</option>
-                  <option>Kansas City Chiefs</option>
-                  <option>Oakland Raiders</option>
-                  <option>San Diego Chargers</option>
-              </optgroup>
-          </select>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
 
-      </div> --}}
-  </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Meublé</label>
+                                <select class="form-select" id="country" aria-label="Default select example" name="furnished">
+                                    <option >Choisir...</option>
+                                    <option value="Yes">Oui</option>
+                                    <option value="No">Non</option>
 
-</div>
+                                </select>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
 
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Carrelé</label>
+                                <select class="form-select" id="country" aria-label="Default select example" name="tiled">
+                                    <option selected>Choisir...</option>
+                                    <option value="Yes">Oui</option>
+                                    <option value="No">Non</option>
 
+                                </select>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
 
-</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Peint</label>
+                                <select class="form-select" id="country" aria-label="Default select example" name="painted">
+                                    <option selected>Choisir...</option>
+                                    <option value="Yes">Oui</option>
+                                    <option value="No">Non</option>
 
+                                </select>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
 
-</div><!-- .animated -->
-</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">A louer/vendre</label>
+                                <select class="form-select" id="country" aria-label="Default select example" name="status">
+                                    <option selected>Choisir...</option>
+                                    <option value="A louer">A louer</option>
+                                    <option value="A vendre">A vendre</option>
+
+                                </select>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Autres</label>
+                                <textarea name="details" class="form-control" placeholder="Entrer votre message..." id="details" rows="4"  ></textarea>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4">
+                                <label for="email">Propriétaire</label>
+                                <select class="form-select" id="country" aria-label="Default select example" name="owner_id">
+                                    <option selected>Choisir...</option>
+                                    @foreach ($owners as $owner)
+                                        <option value="{{$owner->id}}">{{$owner->first_name . "". $owner->last_name}}</option>
+                                    @endforeach
+                                   
+
+                                </select>
+                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-3 py-3">
+                <button type="reset" class="btn btn-danger">Annuler</button>
+                <button type="submit" class="btn btn-success text-white">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</form>
+    
 @endsection

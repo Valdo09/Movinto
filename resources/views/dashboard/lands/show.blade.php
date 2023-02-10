@@ -11,19 +11,18 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item " aria-current="page">Parcelles</li>
-                    <li class="breadcrumb-item active" aria-current="page">Ajouter une parcelle</li>
+                    <li class="breadcrumb-item " aria-current="page">Maisons</li>
+                    <li class="breadcrumb-item active" aria-current="page">Details d'une maison</li>
                 </ol>
             </nav>
-            <h2 class="h4">Ajouter une parcelle</h2>
+            <h2 class="h4">Details d'une maison</h2>
         </div>
 
     </div>
 @endsection
 
 @section('content')
-<form action="{{route('admin.lands.save')}}" enctype="multipart/form-data" method="POST">
-    @csrf
+@foreach ($land as $index)
     <div class="row py-4">
         <div class="col-12 col-lg-6">
             <div class="card border-0 shadow">
@@ -32,60 +31,54 @@
 
                 </div>
                 <div class="card-body">
+                    
                     <div class="row mb-4">
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Intitulé</label>
-                                <input type="text" name="intitule" id="" class="form-control">
-                                <small class="form-text text-muted">ex. 1 chambre salon à</small>
+                                <div class="h5"> {{$index->intitule}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Adresse</label>
-                                <input type="text" name="adress" id="" class="form-control">
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{$index->adresse}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Superficie</label>
-                                <input type="text" name="superficie" id="" class="form-control">
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{$index->superficie}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Loyer/Prix</label>
-                                <input type="number" name="rent" id="" class="form-control">
-                                <small class="form-text text-muted">15000</small>
+                                <div class="h5"> {{$index->loyer}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Description</label>
-                                <input type="text" name="description" id="" class="form-control">
-                                <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
+                                <div class="h5"> {{$index->description}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Image</label>
-                                <input type="file" name="property_photo" id="" class="form-control">
-                                <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
+                                <div class="h5"> oui</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Lien de la visite virtuelle</label>
-                                <input type="text" name="visite_virtuelle" id="" class="form-control">
-                                <small class="form-text text-muted">ex. 9999 9999 9999 9999</small>
+                                <div class="h5"> {{$index->visite_virtuelle}}</div>
                             </div>
 
                         </div>
@@ -102,53 +95,32 @@
                 </div>
                 <div class="card-body">
                     <div class="row mb-4">
-
+                      
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Recasé</label>
-                                <select class="form-select" id="country" aria-label="Default select example" name="rehoused">
-                                    <option selected>Choisir...</option>
-                                    <option value="Yes">Oui</option>
-                                    <option value="No">Non</option>
-
-                                </select>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{$index->isRehoused ? "Oui": "Non"}}</div>
                             </div>
 
                         </div>
-
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">A louer/vendre</label>
-                                <select class="form-select" id="country" aria-label="Default select example" name="status">
-                                    <option selected>Choisir...</option>
-                                    <option value="A louer">A louer</option>
-                                    <option value="A vendre">A vendre</option>
-
-                                </select>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{$index->status}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Autres</label>
-                                <textarea name="details" class="form-control" placeholder="Entrer votre message..." id="textarea" rows="4"></textarea>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{$index->details}}</div>
                             </div>
 
                         </div>
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Propriétaire</label>
-                                <select class="form-select" id="country" aria-label="Default select example" name="owner_id">
-                                    <option selected>Choisir...</option>
-                                    @foreach ($owners as $owner)
-                                        <option value="{{$owner->id}}">{{$owner->first_name . "". $owner->last_name}}</option>
-                                    @endforeach
-
-                                </select>
-                                <small class="form-text text-muted">Calavi, Cxxx</small>
+                                <div class="h5"> {{App\Models\User::find($index->owner_id)->first_name ." ".App\Models\User::find($index->owner_id)->last_name}}</div>
                             </div>
 
                         </div>
@@ -156,13 +128,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="d-flex gap-3 py-3">
-                <button type="reset" class="btn btn-danger">Annuler</button>
-                <button type="submit" class="btn btn-success text-white">Enregistrer</button>
-            </div>
         </div>
     </div>
-</form>
-  
+@endforeach
 @endsection

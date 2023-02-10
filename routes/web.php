@@ -80,15 +80,20 @@ Route::prefix("admin")->middleware('admin')->group(function(){
     Route::get('properties/homes/edit/{home:id}',[PropertyController::class,'editHome'])->name('admin.homes.edit');
     Route::put('properties/homes/update/{home:id}',[PropertyController::class,'updateHome'])->name('admin.homes.update');
     Route::delete('properties/homes/delete/{home:id}',[PropertyController::class,'destroyHome'])->name('admin.homes.destroy');
+    Route::get('properties/homes/show/{home:id}',[PropertyController::class,'showHome'])->name('admin.homes.show');
 
-    Route::get('properties/rooms/edit{room:id}',[PropertyController::class,'editRoom'])->name('admin.rooms.edit');
+
+    Route::get('properties/rooms/edit/{room:id}',[PropertyController::class,'editRoom'])->name('admin.rooms.edit');
     Route::put('properties/rooms/update/{room:id}',[PropertyController::class,'updateRoom'])->name('admin.rooms.update');
     Route::delete('properties/rooms/delete/{room:id}',[PropertyController::class,'destroyRoom'])->name('admin.rooms.destroy');
+    Route::get('properties/rooms/show/{room:id}',[PropertyController::class,'showRoom'])->name('admin.rooms.show');
 
-
-    Route::get('properties/lands/edit{land:id}',[PropertyController::class,'editLand'])->name('admin.lands.edit');
+  
+    Route::get('properties/lands/edit/{land:id}',[PropertyController::class,'editLand'])->name('admin.lands.edit');
     Route::put('properties/lands/update/{land:id}',[PropertyController::class,'updateLand'])->name('admin.lands.update');
     Route::delete('properties/lands/delete/{land:id}',[PropertyController::class,'destroyLand'])->name('admin.lands.destroy');
+    Route::get('properties/lands/show/{land:id}',[PropertyController::class,'showLand'])->name('admin.lands.show');
+
 
 
 
@@ -96,6 +101,11 @@ Route::prefix("admin")->middleware('admin')->group(function(){
     Route::get('/users/owners',[UserController::class,'showOwners'])->name('admin.owners.show');
     Route::get('/users/customers',[UserController::class,'showCustomers'])->name('admin.customers.show');
     Route::get('/users',[Usercontroller::class,'showAllUsers'])->name('admin.users.show');
+    Route::post('/users/customers-to-owners/{customer:id}',[Usercontroller::class,'changeCustomerToOwner'])->name('customers.change.owners');
+    Route::post('/users/owners-to-customers/{owner:id}',[Usercontroller::class,'changeOwnerToCustomer'])->name('owners.change.customers');
+
+   
+
 
 
 

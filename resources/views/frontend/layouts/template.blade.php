@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>EstateAgency Bootstrap Template - Index</title>
+    <title>Movinto</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('front/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('front/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    {{-- <link href="{{ asset('front/img/favicon.png') }}" rel="icon"> --}}
+    {{-- <link href="{{ asset('front/img/apple-touch-icon.png') }}" rel="apple-touch-icon"> --}}
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -28,7 +28,7 @@
 <!--/ Form Search Star /-->
 <div class="box-collapse">
     <div class="title-box-d">
-        <h3 class="title-d">Search Property</h3>
+        <h3 class="title-d">Rechercher une propriété</h3>
     </div>
     <span class="close-box-collapse right-boxed bi bi-x"></span>
     <div class="box-collapse-wrap form">
@@ -36,26 +36,25 @@
             <div class="row">
                 <div class="col-md-12 mb-2">
                     <div class="form-group">
-                        <label class="pb-2" for="Type">Keyword</label>
-                        <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+                        <label class="pb-2" for="Type">Mot clé</label>
+                        <input type="text" class="form-control form-control-lg form-control-a" placeholder="Mot clé">
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <div class="form-group mt-3">
                         <label class="pb-2" for="Type">Type</label>
                         <select class="form-control form-select form-control-a" id="Type">
-                            <option>All Type</option>
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                            <option>Open House</option>
+                            <option>Tout Type</option>
+                            <option>A louer</option>
+                            <option>A acheter</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <div class="form-group mt-3">
-                        <label class="pb-2" for="city">City</label>
+                        <label class="pb-2" for="city">Ville</label>
                         <select class="form-control form-select form-control-a" id="city">
-                            <option>All City</option>
+                            <option>Toutes les villes</option>
                             <option>Alabama</option>
                             <option>Arizona</option>
                             <option>California</option>

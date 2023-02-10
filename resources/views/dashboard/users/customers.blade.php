@@ -1,103 +1,95 @@
-@extends('layouts.dashboard')
+@extends('backend.layouts.template')
+
+@section('header')
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+        <div class="d-block mb-4 mb-md-0">
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                    <li class="breadcrumb-item">
+                        <a href="#">
+                            <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Utilisateurs</li>
+                </ol>
+            </nav>
+            <h2 class="h4">Liste des clients</h2>
+        </div>
+
+    </div>
+@endsection
+
 @section('content')
-    <div class="content">
-        <div class="card m-5">
-            <div class="card-header">
-                <strong class="card-title">Liste des clients</strong>
-            </div>
-            <div class="table-stats order-table ov-h">
-                <table class="table ">
-                    <thead>
-                    <tr>
-                        <th class="serial">#</th>
-                        <th class="avatar">Prénom</th>
-                        <th>Nom</th>
-                        <th>Email</th>
-                        <th>Téléphone</th>
-                        <th>Date de naissance</th>
-                        <th>Sexe</th>
 
+    <div class="card card-body border-0 shadow table-wrapper table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th class="border-gray-200">#</th>
+                <th class="border-gray-200">Nom</th>
+                <th class="border-gray-200">Prénoms</th>
+                <th class="border-gray-200">Email</th>
+                <th class="border-gray-200">Téléphone</th>
+                <th class="border-gray-200">Date de naissance</th>
+                <th class="border-gray-200">Sexe</th>
+                <th class="border-gray-200">Action</th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach ($customers as $customer)
-                        <tr>
-                            <td class="serial">{{$customer->id}}.</td>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($customers as $customer)
+                <tr>
+                    <td class="serial">{{$customer->id}}.</td>
 
-                            <td> {{$customer->first_name}} </td>
-                            <td>  <span class="name">{{$customer->last_name}}</span> </td>
-                            <td> <span class="product">{{$customer->email}}</span> </td>
-                            <td><span class="">{{$customer->phone_number}}</span></td>
+                    <td> {{$customer->first_name}} </td>
+                    <td>  <span class="name">{{$customer->last_name}}</span> </td>
+                    <td> <span class="product">{{$customer->email}}</span> </td>
+                    <td><span class="">{{$customer->phone_number}}</span></td>
 
-                            <td>{{$customer->birthdate}}</td>
-                            <td>{{$customer->sex}}</td>
+                    <td>{{$customer->birthdate}}</td>
+                    <td>{{$customer->sex}}</td>
+                    <td>
+                        <form action="{{route('customers.change.owners',$customer->id)}}" method="POST">
+                            @csrf
+                            <button type="submit">Rendre propriétaire</button>
+                        </form>
+                        
+                    </td>
 
-                            {{-- <td>
-                              <span class="badge badge-{{$room->isTiled?'complete':'danger'}}">{{$room->isTiled?'Oui':'Non'}}</span>
-                             </td>
-                             <td>
-                                 <span class="badge badge-{{$room->isPainted?'complete':'danger'}}">{{$room->isPainted?'Oui':'Non'}}</span>
-                            </td>
-                            <td>
-                             <span class="badge badge-pending">{{$room->status}}</span>
-                            </td> --}}
+                    
 
-                        </tr>
-                    @endforeach
-                    {{-- <td>{{$home->isFurnished?'Oui':'Non'}}</td>
-                <td>{{$home->isPainted?'Oui':'Non'}}</td>
-                <td>{{$home->isTiled?'Oui':'Non'}}</td> --}}
-                    {{--
-                                    <tr>
-                                        <td class="serial">2.</td>
-                                        <td class="avatar">
-                                            <div class="round-img">
-                                                <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a>
-                                            </div>
-                                        </td>
-                                        <td> #5468 </td>
-                                        <td>  <span class="name">Gregory Dixon</span> </td>
-                                        <td> <span class="product">iPad</span> </td>
-                                        <td><span class="count">250</span></td>
-                                        <td>
-                                            <span class="badge badge-complete">Complete</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="serial">3.</td>
-                                        <td class="avatar">
-                                            <div class="round-img">
-                                                <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a>
-                                            </div>
-                                        </td>
-                                        <td> #5467 </td>
-                                        <td>  <span class="name">Catherine Dixon</span> </td>
-                                        <td> <span class="product">SSD</span> </td>
-                                        <td><span class="count">250</span></td>
-                                        <td>
-                                            <span class="badge badge-complete">Complete</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="serial">4.</td>
-                                        <td class="avatar">
-                                            <div class="round-img">
-                                                <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a>
-                                            </div>
-                                        </td>
-                                        <td> #5466 </td>
-                                        <td>  <span class="name">Mary Silva</span> </td>
-                                        <td> <span class="product">Magic Mouse</span> </td>
-                                        <td><span class="count">250</span></td>
-                                        <td>
-                                            <span class="badge badge-pending">Pending</span>
-                                        </td>
-                                    </tr> --}}
-                    </tbody>
-                </table>
-            </div> <!-- /.table-stats -->
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+        <div class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination mb-0">
+                    <li class="page-item">
+                        <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
         </div>
     </div>
-
 @endsection

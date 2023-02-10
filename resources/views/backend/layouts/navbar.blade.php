@@ -10,7 +10,7 @@
                   <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                 </svg>
               </span>
-                        <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
+                        <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Rechercher" aria-label="Search" aria-describedby="topbar-addon">
                     </div>
                 </form>
                 <!-- / Search form -->
@@ -22,7 +22,7 @@
                         <div class="media d-flex align-items-center">
                             <img class="avatar rounded-circle" alt="Image placeholder" src="{{ asset('back/assets/img/team/profile-picture-3.jpg')}}">
                             <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                                <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
+                                <span class="mb-0 font-small fw-bold text-gray-900">{{Auth::user()->first_name ." ".Auth::user()->last_name}}</span>
                             </div>
                         </div>
                     </a>

@@ -23,7 +23,6 @@ class CreatePropertiesTable extends Migration
             $table->string('details');
             $table->string('image');
             $table->string('description');
-            $table->boolean('isMeuble');
             $table->string('visite_virtuelle');
             $table->unsignedBigInteger('room_id')->nullable();
             $table->foreign('room_id')->references('id')->on('rooms');

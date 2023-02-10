@@ -16,11 +16,33 @@ class PropertyController extends Controller
     public function index()
     {
         $properties=Property::all();
+        
         return view('welcome', compact('properties'));
     }
     public function show(Property $property)
     {
         return view('properties-details',compact('property'));
+    }
+    public function showHome($id){
+        $home=DB::table('properties')
+                    ->join('homes','properties.home_id','=','homes.id')
+                    ->where('homes.id',$id)
+                    ->get();
+        return view('dashboard.homes.show',compact('home'));
+    }
+    public function showRoom($id){
+        $room=DB::table('properties')
+        ->join('rooms','properties.room_id','=','rooms.id')
+        ->where('rooms.id',$id)
+        ->get();
+return view('dashboard.rooms.show',compact('room'));
+    }
+    public function showLand($id){
+        $land=DB::table('properties')
+        ->join('lands','properties.land_id','=','lands.id')
+        ->where('lands.id',$id)
+        ->get();
+return view('dashboard.lands.show',compact('land'));
     }
     public function showAdmin($type_id)
     {
@@ -28,7 +50,7 @@ class PropertyController extends Controller
         {
             $rooms=DB::table('properties')
                             ->join('rooms', 'properties.room_id', '=', 'rooms.id')
-                            ->get();
+                            ->paginate(10);
             return view('dashboard.rooms.index',compact('rooms'));
 
         }
@@ -36,7 +58,7 @@ class PropertyController extends Controller
         {
             $homes=DB::table('properties')
                             ->join('homes', 'properties.home_id', '=', 'homes.id')
-                            ->get();
+                            ->paginate(10);
             return view('dashboard.homes.index',compact('homes'));
 
             
@@ -45,7 +67,7 @@ class PropertyController extends Controller
         {
             $lands=DB::table('properties')
                             ->join('lands', 'properties.land_id', '=', 'lands.id')
-                            ->get();
+                            ->paginate(10);
             return view('dashboard.lands.index',compact('lands'));
 
         }
@@ -57,7 +79,7 @@ class PropertyController extends Controller
     }
     public function createProperty($type_id)
     {
-        $owners=User::where('role_id',2);
+        $owners=User::where('role_id',2)->get();
         if($type_id==1)
         {
             return view('dashboard.rooms.create',compact('owners'));
@@ -111,11 +133,12 @@ class PropertyController extends Controller
             $property->owner_id=$request->owner_id;
             $property->status=$request->status;
             $property->details=$request->details;
+
             $property->room_id=$room->id;
             $property->type_id=1;
            
-                $image = $request->file('photo');
-                $filename = time().'.'.$image->getClientOriginalExtension();
+                $image = $request->file('property_photo');
+                $filename = time().'.'.$image->extension();
                 $image->move('images/properties/',$filename);
             
             
@@ -126,7 +149,7 @@ class PropertyController extends Controller
                             ->join('rooms', 'properties.room_id', '=', 'rooms.id')
                             ->get();
            
-            return redirect()->route('admin.properties.index',1)->with('success','Chambre ajoutée avec succès');
+             return redirect()->route('admin.properties.index',1)->with('success','Chambre ajoutée avec succès');
         }
         public function saveHome (Request $request)
         {
@@ -171,8 +194,8 @@ class PropertyController extends Controller
             $property->home_id=$home->id;
             $property->type_id=2;
            
-                $image = $request->file('photo');
-                $filename = time().'.'.$image->getClientOriginalExtension();
+             $image = $request->file('property_photo');
+                $filename = time().'.'.$image->extension();
                 $image->move('images/properties/',$filename);
             
             
@@ -182,7 +205,7 @@ class PropertyController extends Controller
             $homes=DB::table('properties')
                             ->join('homes', 'properties.home_id', '=', 'homes.id')
                             ->get();
-                    return redirect()->route('admin.properties.index',2)->with('success','Maison ajoutée avec succès');
+                     return redirect()->route('admin.properties.index',2)->with('success','Maison ajoutée avec succès');
                         }
         public function saveLand(Request $request)
         {
@@ -211,9 +234,9 @@ class PropertyController extends Controller
             
             $property->land_id=$land->id;
             $property->type_id=3;
-           
-                $image = $request->file('photo');
-                $filename = time().'.'.$image->getClientOriginalExtension();
+
+                 $image = $request->file('property_photo');
+                $filename = time().'.'.$image->extension();
                 $image->move('images/properties/',$filename);
             
             
@@ -223,7 +246,7 @@ class PropertyController extends Controller
             $lands=DB::table('properties')
                             ->join('lands', 'properties.land_id', '=', 'lands.id')
                             ->get();
-            return redirect()->route('admin.properties.index',3)->with('success','Parcelle ajoutée avec succès');
+             return redirect()->route('admin.properties.index',3)->with('success','Parcelle ajoutée avec succès');
 
         }
         public function editHome($id)
