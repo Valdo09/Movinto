@@ -27,9 +27,30 @@ Route::get('/template/login', function (){
     return view('authentification.login');
 });
 
-Route::get('/frontest', function (){
-    return view('frontend.home');
-});
+Route::get('/front/accueil', function (){
+    return view('frontend.accueil');
+})->name('front-accueil');
+
+Route::get('/front/rooms', function (){
+    return view('frontend.rooms');
+})->name('front-rooms');
+
+Route::get('/front/lands', function (){
+    return view('frontend.lands');
+})->name('front-lands');
+
+Route::get('/front/homes', function (){
+    return view('frontend.homes');
+})->name('front-homes');
+
+Route::get('/front/property-details', function (){
+    return view('frontend.property-details');
+})->name('front-property');
+
+Route::get('/front/user-details', function (){
+    return view('frontend.user-details');
+})->name('front-profile');
+
 
 Route::get('/backend', function (){
     return view('backend.dashboard');
