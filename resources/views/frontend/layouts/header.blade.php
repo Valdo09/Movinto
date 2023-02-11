@@ -10,8 +10,9 @@
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ route("accueil") }}">Accueil</a>
+                <li class="nav-item {{request()->requestUri=='/accueil' ? 'active' : '' }}"  >
+                    <a class="nav-link " href="{{ route("accueil") }}">Accueil</a>
+                    {{-- @php dd(request()->pathInfo)@endphp --}}
                 </li>
 
                 <li class="nav-item">
@@ -31,10 +32,11 @@
             </ul>
         </div>
 
+       
+        @if(Auth::user())
         <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
             <i class="bi bi-person"></i>
         </button>
-        @if(Auth::user())
         <ul class="nav">
 
             <li class="nav-item">

@@ -23,7 +23,7 @@
 
 @section('content')
 @foreach ($land as $item)
-<form action="{{route('admin.lands.update',$item->id)}}" method="POST">
+<form action="{{route('admin.lands.update',$item->id)}}" method="POST" enctype="multipart/form-data">
     @method('PUT')
     @csrf
     <div class="row py-4">
@@ -79,7 +79,7 @@
                         <div class="col-12">
                             <div class="mb-4">
                                 <label for="email">Image</label>
-                                <input type="file" name="" id="" class="form-control">
+                                <input type="file" name="photo" id="" class="form-control">
                                 <small class="form-text text-muted">ex. ~9.99 ~9.99 999</small>
                             </div>
 
