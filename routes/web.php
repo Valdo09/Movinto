@@ -21,11 +21,11 @@ use App\Http\Controllers\Usercontroller;
 */
 Route::get('/template/register', function (){
     return view('authentification.register');
-});
+})->name('front-signup');
 
 Route::get('/template/login', function (){
     return view('authentification.login');
-});
+})->name('front-signin');
 
 Route::get('/front/accueil', function (){
     return view('frontend.accueil');
@@ -124,7 +124,7 @@ Route::prefix("admin")->middleware('admin')->group(function(){
     Route::delete('properties/rooms/delete/{room:id}',[PropertyController::class,'destroyRoom'])->name('admin.rooms.destroy');
     Route::get('properties/rooms/show/{room:id}',[PropertyController::class,'showRoom'])->name('admin.rooms.show');
 
-  
+
     Route::get('properties/lands/edit/{land:id}',[PropertyController::class,'editLand'])->name('admin.lands.edit');
     Route::put('properties/lands/update/{land:id}',[PropertyController::class,'updateLand'])->name('admin.lands.update');
     Route::delete('properties/lands/delete/{land:id}',[PropertyController::class,'destroyLand'])->name('admin.lands.destroy');
@@ -140,7 +140,7 @@ Route::prefix("admin")->middleware('admin')->group(function(){
     Route::post('/users/customers-to-owners/{customer:id}',[Usercontroller::class,'changeCustomerToOwner'])->name('customers.change.owners');
     Route::post('/users/owners-to-customers/{owner:id}',[Usercontroller::class,'changeOwnerToCustomer'])->name('owners.change.customers');
 
-   
+
 
 
 

@@ -11,32 +11,33 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route("accueil") }}">Accueil</a>
+                    <a class="nav-link  @if(\Illuminate\Support\Facades\Request::routeIs('accueil')) active @endif " href="{{ route("accueil") }}">Accueil</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{request()->is('/rooms') ? 'active' : '' }}" href="{{ route("rooms.listing") }}">Chambres</a>
+                    <a class="nav-link  @if(\Illuminate\Support\Facades\Request::is('rooms')) active @endif" href="{{ route("rooms.listing") }}">Chambres</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{request()->is('/homes') ? 'active' : '' }}" href="{{ route('homes.listing') }}">Maisons</a>
+                    <a class="nav-link   @if(\Illuminate\Support\Facades\Request::is('homes')) active @endif" href="{{ route('homes.listing') }}">Maisons</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{request()->is('/lands') ? 'active' : ''}}" href="{{ route('lands.listing') }}">Parcelles</a>
+                    <a class="nav-link  @if(\Illuminate\Support\Facades\Request::is('lands')) active @endif " href="{{ route('lands.listing') }}">Parcelles</a>
                 </li>
 
-                
+
 
             </ul>
         </div>
-
+        @auth
         <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
             <i class="bi bi-person"></i>
         </button>
-        @if(Auth::user())
-        <ul class="nav">
+        @endauth
 
+        <ul class="nav">
+            @auth
             <li class="nav-item">
                 <a class="nav-link" href="{{ route("users.profile",Auth::user()->id) }}">
                     {{Auth::user()->first_name ." ". Auth::user()->last_name}}</a>
@@ -48,8 +49,19 @@
                 <a class="btn btn-danger" href="{{route('dashboard')}}">Espace admin</a>
             </li>
             @endif
+            @else
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('front-signup') }}">
+                      Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="{{ route('front-signin') }}">
+                      Connexion</a>
+                </li>
+
+            @endauth
         </ul>
-        @endif
+
 
     </div>
 </nav><!-- End Header/Navbar -->
