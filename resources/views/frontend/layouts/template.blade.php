@@ -10,8 +10,6 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    {{-- <link href="{{ asset('front/img/favicon.png') }}" rel="icon"> --}}
-    {{-- <link href="{{ asset('front/img/apple-touch-icon.png') }}" rel="apple-touch-icon"> --}}
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -23,104 +21,8 @@
 
 <body>
 
-<!-- ======= Property Search Section ======= -->
-<div class="click-closed"></div>
-<!--/ Form Search Star /-->
-<div class="box-collapse">
-    <div class="title-box-d">
-        <h3 class="title-d">Rechercher une propriété</h3>
-    </div>
-    <span class="close-box-collapse right-boxed bi bi-x"></span>
-    <div class="box-collapse-wrap form">
-        <form class="form-a">
-            <div class="row">
-                <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        <label class="pb-2" for="Type">Mot clé</label>
-                        <input type="text" class="form-control form-control-lg form-control-a" placeholder="Mot clé">
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="Type">Type</label>
-                        <select class="form-control form-select form-control-a" id="Type">
-                            <option>Tout Type</option>
-                            <option>A louer</option>
-                            <option>A acheter</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="city">Ville</label>
-                        <select class="form-control form-select form-control-a" id="city">
-                            <option>Toutes les villes</option>
-                            <option>Alabama</option>
-                            <option>Arizona</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="bedrooms">Bedrooms</label>
-                        <select class="form-control form-select form-control-a" id="bedrooms">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="garages">Garages</label>
-                        <select class="form-control form-select form-control-a" id="garages">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="bathrooms">Bathrooms</label>
-                        <select class="form-control form-select form-control-a" id="bathrooms">
-                            <option>Any</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-2">
-                    <div class="form-group mt-3">
-                        <label class="pb-2" for="price">Min Price</label>
-                        <select class="form-control form-select form-control-a" id="price">
-                            <option>Unlimite</option>
-                            <option>$50,000</option>
-                            <option>$100,000</option>
-                            <option>$150,000</option>
-                            <option>$200,000</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-b">Search Property</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div><!-- End Property Search Section -->>
-
-<!-- ======= Header/Navbar ======= -->
 @include('frontend.layouts.header')
 
-<!-- ======= Intro Section ======= -->
-<!-- End Intro Section -->
 
 @yield('introsection')
 

@@ -5,45 +5,51 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="index.html">Mov<span class="color-b">Into</span></a>
+        <a class="navbar-brand text-brand" href="{{ route('accueil') }}">Mov<span class="color-b">Into</span></a>
 
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Accueil</a>
+                    <a class="nav-link active" href="{{ route("accueil") }}">Accueil</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="about.html">Chambres</a>
+                    <a class="nav-link {{request()->is('/rooms') ? 'active' : '' }}" href="{{ route("rooms.listing") }}">Chambres</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="property-grid.html">Maisons</a>
+                    <a class="nav-link {{request()->is('/homes') ? 'active' : '' }}" href="{{ route('homes.listing') }}">Maisons</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="blog-grid.html">Parcelles</a>
+                    <a class="nav-link {{request()->is('/lands') ? 'active' : ''}}" href="{{ route('lands.listing') }}">Parcelles</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item " href="property-single.html">Property Single</a>
-                        <a class="dropdown-item " href="blog-single.html">Blog Single</a>
-                        <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
-                        <a class="dropdown-item " href="agent-single.html">Agent Single</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                </li>
+                
+
             </ul>
         </div>
 
         <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-            <i class="bi bi-search"></i>
+            <i class="bi bi-person"></i>
         </button>
+        @if(Auth::user())
+        <ul class="nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route("users.profile",Auth::user()->id) }}">
+                    {{Auth::user()->first_name ." ". Auth::user()->last_name}}</a>
+            </li>
+
+
+            @if(Auth::user()->role_id==1)
+            <li class="nav-item">
+                <a class="btn btn-danger" href="{{route('dashboard')}}">Espace admin</a>
+            </li>
+            @endif
+        </ul>
+        @endif
 
     </div>
 </nav><!-- End Header/Navbar -->

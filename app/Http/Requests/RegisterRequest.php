@@ -36,7 +36,6 @@ class RegisterRequest extends FormRequest
             'password' => 'required|min:8',
             'password_confirmation' => 'required|same:password',
             'sex'=>'required',
-            'birthdate'=>'required',
             'role_id'=>'required'
             
         ];

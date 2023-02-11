@@ -28,4 +28,8 @@ class HomeController extends Controller
             'lands_number',
     ));
     }
+    public function profile($id){
+        $user=User::where('id',$id)->first();
+        return view('frontend.user-details',compact('user'));
+    }
 }

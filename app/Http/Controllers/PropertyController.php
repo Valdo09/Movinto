@@ -15,13 +15,49 @@ class PropertyController extends Controller
 {
     public function index()
     {
-        $properties=Property::all();
+        $homes=DB::table('homes')
+        ->join('properties','homes.id','=','properties.home_id')
+        ->limit(4)
+        ->get();
+      
         
-        return view('welcome', compact('properties'));
+        $rooms=DB::table('rooms')
+        ->join('properties','rooms.id','=','properties.room_id')
+        ->limit(4)
+        ->get();
+
+        $lands=DB::table('lands')
+        ->join('properties','lands.id','=','properties.land_id')
+        ->limit(4)
+        ->get();
+
+       
+        
+        return view('welcome', compact('homes','rooms','lands'));
     }
-    public function show(Property $property)
+    public function show( Property $property)
     {
-        return view('properties-details',compact('property'));
+        
+        return view('frontend.property-details',compact('property'));
+    }
+    public function listRooms(){
+        $rooms=DB::table('rooms')
+        ->join('properties', 'rooms.id', '=', 'properties.room_id')
+        ->paginate(6);
+        return view('frontend.rooms',compact('rooms'));
+
+    }
+    public function listHomes(){
+        $homes=DB::table('homes')
+        ->join('properties', 'homes.id', '=', 'properties.home_id')
+        ->paginate(6);
+        return view('frontend.homes',compact('homes'));
+    }
+    public function listLands(){
+        $lands=DB::table('lands')
+        ->join('properties', 'lands.id', '=', 'properties.land_id')
+        ->paginate(6);
+        return view('frontend.lands',compact('lands'));
     }
     public function showHome($id){
         $home=DB::table('properties')

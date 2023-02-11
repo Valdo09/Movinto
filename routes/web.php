@@ -19,10 +19,38 @@ use App\Http\Controllers\Usercontroller;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/frontest', function (){
-    return view('frontend.home');
+Route::get('/template/register', function (){
+    return view('authentification.register');
 });
+
+Route::get('/template/login', function (){
+    return view('authentification.login');
+});
+
+Route::get('/front/accueil', function (){
+    return view('frontend.accueil');
+})->name('front-accueil');
+
+Route::get('/front/rooms', function (){
+    return view('frontend.rooms');
+})->name('front-rooms');
+
+Route::get('/front/lands', function (){
+    return view('frontend.lands');
+})->name('front-lands');
+
+Route::get('/front/homes', function (){
+    return view('frontend.homes');
+})->name('front-homes');
+
+Route::get('/front/property-details', function (){
+    return view('frontend.property-details');
+})->name('front-property');
+
+Route::get('/front/user-details', function (){
+    return view('frontend.user-details');
+})->name('front-profile');
+
 
 Route::get('/backend', function (){
     return view('backend.dashboard');
@@ -32,13 +60,21 @@ Route::get('/backend/show', function (){
 });
 Route::get('/backend/create', function (){
     return view('backend.rooms.create');
-});Route::get('/backend/edit', function (){
+});
+Route::get('/backend/edit', function (){
     return view('backend.rooms.edit');
 });
+
 
 Route::get('/accueil',[PropertyController::class,'index'])->name('accueil');
 
 Route::get('/',[PropertyController::class,'index'])->name('properties.show');
+Route::get('/rooms',[PropertyController::class,'listRooms'])->name('rooms.listing');
+Route::get('/homes',[PropertyController::class,'listHomes'])->name('homes.listing');
+Route::get('/lands',[PropertyController::class,'listLands'])->name('lands.listing');
+
+Route::get('profile/{id}',[HomeController::class,'profile'])->name('users.profile');
+
 Route::get('/details/property/{property:id}',[PropertyController::class,'show'])->name('details');
 
 Route::group(['middleware' => ['guest']], function() {
@@ -56,7 +92,7 @@ Route::group(['middleware' => ['guest']], function() {
     Route::post('/login', [LoginController::class,'login'])->name('login.perform');
 
 });
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth','admin']], function() {
     /**
      * Logout Routes
      */

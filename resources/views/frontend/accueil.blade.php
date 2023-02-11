@@ -4,7 +4,7 @@
     <div class="intro intro-carousel swiper position-relative">
 
         <div class="swiper-wrapper">
-
+            
             <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url({{ asset('front/img/slide-1.jpg') }})">
                 <div class="overlay overlay-a"></div>
                 <div class="intro-content display-table">
@@ -13,15 +13,15 @@
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="intro-body">
-                                        <p class="intro-title-top">Doral, Florida
-                                            <br> 78345
+                                        <p class="intro-title-top">Adresse
+                                            <br> Adressse
                                         </p>
                                         <h1 class="intro-title mb-4 ">
-                                            <span class="color-b">204 </span> Mount
-                                            <br> Olive Road Two
+                                            <span class="color-b">Superficie </span> Intitule
+                                            <br> Intitule
                                         </h1>
                                         <p class="intro-subtitle intro-price">
-                                            <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                                            <a href="#"><span class="price-a">A louer |  120.000 FCFA</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -38,15 +38,15 @@
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="intro-body">
-                                        <p class="intro-title-top">Doral, Florida
-                                            <br> 78345
+                                        <p class="intro-title-top">Adresse
+                                            <br> Adresse
                                         </p>
                                         <h1 class="intro-title mb-4">
-                                            <span class="color-b">204 </span> Rino
-                                            <br> Venda Road Five
+                                            <span class="color-b">Superficie </span> intitule
+                                            <br> intitule
                                         </h1>
                                         <p class="intro-subtitle intro-price">
-                                            <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                                            <a href="#"><span class="price-a">A louer | 120.000 FCFA</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -63,15 +63,15 @@
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="intro-body">
-                                        <p class="intro-title-top">Doral, Florida
-                                            <br> 78345
+                                        <p class="intro-title-top">Adresse
+                                            <br> Adresse
                                         </p>
                                         <h1 class="intro-title mb-4">
-                                            <span class="color-b">204 </span> Alira
-                                            <br> Roan Road One
+                                            <span class="color-b">Superficie </span> Intitule
+                                            <br> Intitule
                                         </h1>
                                         <p class="intro-subtitle intro-price">
-                                            <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                                            <a href="#"><span class="price-a">A louer | 120.000</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -118,38 +118,31 @@
                                 <div class="card-overlay-a-content">
                                     <div class="card-header-a">
                                         <h2 class="card-title-a">
-                                            <a href="property-single.html">206 Mount
-                                                <br /> Olive Road Two</a>
+                                            <a href="property-single.html">Intitule de la maison</a>
                                         </h2>
                                     </div>
                                     <div class="card-body-a">
                                         <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
+                                            <span class="price-a">A louer |  1 200 000 FCFA</span>
                                         </div>
-                                        <a href="#" class="link-a">Click here to view
+                                        <a href="#" class="link-a">Consulter les details
                                             <span class="bi bi-chevron-right"></span>
                                         </a>
                                     </div>
                                     <div class="card-footer-a">
                                         <ul class="card-info d-flex justify-content-around">
                                             <li>
-                                                <h4 class="card-info-title">Area</h4>
+                                                <h4 class="card-info-title">Superficie</h4>
                                                 <span>340m
                             <sup>2</sup>
                           </span>
                                             </li>
                                             <li>
-                                                <h4 class="card-info-title">Beds</h4>
+                                                <h4 class="card-info-title">Nbr de chambres</h4>
                                                 <span>2</span>
                                             </li>
-                                            <li>
-                                                <h4 class="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                            </li>
-                                            <li>
-                                                <h4 class="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                            </li>
+
+
                                         </ul>
                                     </div>
                                 </div>
@@ -336,12 +329,12 @@
                             <div class="card-overlay">
                                 <div class="card-header-b">
                                     <div class="card-category-b">
-                                        <a href="#" class="category-b">House</a>
+                                        <a href="#" class="category-b">500 m2</a>
                                     </div>
                                     <div class="card-title-b">
                                         <h2 class="title-2">
-                                            <a href="blog-single.html">House is comming
-                                                <br> new</a>
+                                            <a href="blog-single.html">Nouvelle parcelle à Calavi
+                                                </a>
                                         </h2>
                                     </div>
                                     <div class="card-date">

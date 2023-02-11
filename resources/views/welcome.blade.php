@@ -1,261 +1,389 @@
-@extends('layouts.app')
+@extends('frontend.layouts.template')
+
+@section('introsection')
+    <?php
+        $last_home=$homes->last();
+        $last_land=$lands->last();
+        $last_room=$rooms->last();
+    ?>
+    <div class="intro intro-carousel swiper position-relative">
+
+        <div class="swiper-wrapper">
+            @foreach ($rooms as $room)
+            <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url({{ asset('images/properties/'.$room->image) }})">
+                <div class="overlay overlay-a"></div>
+                <div class="intro-content display-table">
+                    <div class="table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="intro-body">
+                                        <p class="intro-title-top">{{$room->adresse}}
+                                            {{-- <br> Adressse --}}
+                                        </p>
+                                        <h1 class="intro-title mb-4 ">
+                                            <span class="color-b">{{$room->superficie}} m2 </span> {{$room->intitule}}
+                                            {{-- <br> Intitule --}}
+                                        </h1>
+                                        <p class="intro-subtitle intro-price">
+                                            <a href="{{route('details',$room->id)}}"><span class="price-a">{{$room->status}} |  {{$room->loyer}} FCFA</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+
+           
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+@endsection
+
 
 @section('content')
-    <!-- END nav -->
 
-    <div class="hero-wrap ftco-degree-bg"
-        style="background-image: url('{{ asset('images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg') }}')"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
+       <!-- ======= Latest Properties Section ======= -->
+    <section class="section-property section-t8">
         <div class="container">
-            <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
-                <div class="col-lg-8 ">
-                    <div class="text w-100 text-center mb-md-5 pb-md-5">
-                        <h1 class="mb-4">Trouvez une maison ou une chambre rapidement sans vous déplacer</h1>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="ftco-section ftco-no-pt bg-light">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-12	featured-top">
-                    <div class="row no-gutters">
-                        {{-- <div class="col-md-4 d-flex align-items-center">
-	  						<form action="{{route('locations.store')}}" class="request-form   bg-primary" method="POST">
-                  @csrf
-		          		<h2>Faites votre réservation</h2>
-			    				<div class="form-group">
-			    					<label for="" class="label">Lieu de prise</label>
-
-			    					<input type="text" class="form-control" placeholder="En ville, A l'aéroport etc" name="pickup_place">
-			    				</div>
-			    				<div class="form-group">
-			    					<label for="" class="label">Lieu de remise</label>
-			    					<input type="text" class="form-control" placeholder="En ville, A l'aéroport etc" name="dropoff_place">
-			    				</div>
-			    				<div class="d-flex">
-			    					<div class="form-group mr-2">
-			                <label for="" class="label">Date de location</label>
-			                <input type="date" class="form-control" id="book_pick_date" placeholder="Date" name="pickup_date">
-			              </div>
-			              <div class="form-group ml-2">
-			                <label for="" class="label">Date de remise</label>
-			                <input type="date" class="form-control" id="book_off_date" placeholder="Date" name="dropoff_date">
-			              </div>
-		              </div>
-		              <div class="form-group">
-		                <label for="" class="label">Heure de location</label>
-		                <input type="text" class="form-control" id="time_pick" placeholder="Heure">
-		              </div>
-			            <div class="form-group">
-			              <input type="submit" value="Louer une voiture maintenant" class="btn btn-secondary py-3 px-4">
-			            </div>
-			    			</form>
-	  					</div> --}}
-                        <div class="col-md-12 d-flex align-items-center">
-                            <div class="services-wrap rounded-right w-100">
-                                <h3 class="heading-section mb-4 text-center">Retrouvez rapidement une maison ou une chambre
-                                    à louer/acheter</h3>
-                                <!-- <div class="row d-flex mb-4">
-         <div class="col-md-4 d-flex align-self-stretch  ">
-         <div class="services w-100 text-center">
-        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
-        <div class="text w-100">
-         <h3 class="heading mb-2">Choisissez votre lieu de location</h3>
-        </div>
-         </div>
-         </div>
-         <div class="col-md-4 d-flex align-self-stretch  ">
-         <div class="services w-100 text-center">
-        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
-        <div class="text w-100">
-         <h3 class="heading mb-2">Choisissez le meilleur plan pour vous</h3>
-         </div>
-         </div>
-         </div>
-         <div class="col-md-4 d-flex align-self-stretch  ">
-         <div class="services w-100 text-center">
-        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
-        <div class="text w-100">
-         <h3 class="heading mb-2">Réservez votre voiture d'occasion</h3>
-         </div>
-         </div>
-         </div>
-         </div> -->
-                                {{-- <p><a href="#" class="btn btn-primary py-3 px-4">Réservez la voiture qu'il vous faut</a></p> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    <section class="ftco-section ftco-no-pt bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 heading-section text-center   mb-5">
-                    <span class="subheading">Qu'offrons-nous?</span>
-                    <h2 class="mb-2">Nos meilleurs biens immobiliers</h2>
-                </div>
-            </div>
             <div class="row">
-                @foreach ($properties as $item)
-                    <div class="col-12 col-lg-4">
-                        <div class="card mb-4 mb-lg-0  shadow ">
+                <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                        <div class="title-box">
+                            <h2 class="title-a">Dernières maisons </h2>
+                        </div>
+                        <div class="title-link">
+                            <a href="property-grid.html">Toutes les maisons
+                                <span class="bi bi-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <span class="notify-badge">{{ $item->status }}</span>
-                            <img class="card-img-top" src="{{ asset('images/properties/' . $item->image) }}">
-                            <div class="card-body">
-                                <div class="card-title">
-                                    <h5>{{ $item->intitule }}</h5>
-                                </div>
-
-                                <p class="card-text"> {{ $item->description }}</p>
-
-                                <div class=" mr-0 pr-0">
-                                    <p class="font-weight-bold color-red">{{ $item->loyer }} FCFA/ mois</p>
-                                </div>
-
-
-
-                                <div class="col-12">
-
-                                        <div class="row">
-                                            <div class=" col-6 ">
-                                                <a href="" class="btn btn-success d-block w-100">Réserver</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <a href=" {{ route('details', $item->id) }}" class="btn btn-primary d-block w-100">Détails</a>
-
-                                            </div>
-                                        </div>
-
+            <div id="property-carousel" class="swiper">
+                <div class="swiper-wrapper">
+                    @foreach($homes as $home)
+                    <div class="carousel-item-b swiper-slide">
+                        <div class="card-box-a card-shadow">
+                            <div class="img-box-a">
+                                <img src="{{ asset('images/properties/'.$home->image) }}" alt="" class="img-a img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-overlay-a-content">
+                                    <div class="card-header-a">
+                                        <h2 class="card-title-a">
+                                            <a href="{{route('details',$home->id)}}">{{$home->intitule}}</a>
+                                        </h2>
                                     </div>
+                                    <div class="card-body-a">
+                                        <div class="price-box d-flex">
+                                            <span class="price-a">{{$home->status}} |  {{$home->loyer}} FCFA</span>
+                                        </div>
+                                        <a href="{{route("details",$home->id)}}" class="link-a">Consulter les details
+                                            <span class="bi bi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer-a">
+                                        <ul class="card-info d-flex justify-content-around">
+                                            <li>
+                                                <h4 class="card-info-title">Superficie</h4>
+                                                <span>{{$home->superficie}}
+                            <sup>2</sup>
+                          </span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Nbr de chambres</h4>
+                                                <span>{{$home->rooms_number}}</span>
+                                            </li>
 
 
-
-
-
-
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+                    @endforeach
+                   
 
-            </div>
-        </div>
-    </section>
+                    {{-- <div class="carousel-item-b swiper-slide">
+                        <div class="card-box-a card-shadow">
+                            <div class="img-box-a">
+                                <img src="{{ asset('front/img/property-3.jpg') }}" alt="" class="img-a img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-overlay-a-content">
+                                    <div class="card-header-a">
+                                        <h2 class="card-title-a">
+                                            <a href="property-single.html">157 West
+                                                <br /> Central Park</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-body-a">
+                                        <div class="price-box d-flex">
+                                            <span class="price-a">rent | $ 12.000</span>
+                                        </div>
+                                        <a href="property-single.html" class="link-a">Click here to view
+                                            <span class="bi bi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer-a">
+                                        <ul class="card-info d-flex justify-content-around">
+                                            <li>
+                                                <h4 class="card-info-title">Area</h4>
+                                                <span>340m
+                            <sup>2</sup>
+                          </span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Beds</h4>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Baths</h4>
+                                                <span>4</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Garages</h4>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="ftco-section ftco-about">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                    style="background-image: url('{{ asset('images/about.jpg') }}')">
+                    <div class="carousel-item-b swiper-slide">
+                        <div class="card-box-a card-shadow">
+                            <div class="img-box-a">
+                                <img src="{{ asset('front/img/property-7.jpg') }}" alt="" class="img-a img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-overlay-a-content">
+                                    <div class="card-header-a">
+                                        <h2 class="card-title-a">
+                                            <a href="property-single.html">245 Azabu
+                                                <br /> Nishi Park let</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-body-a">
+                                        <div class="price-box d-flex">
+                                            <span class="price-a">rent | $ 12.000</span>
+                                        </div>
+                                        <a href="property-single.html" class="link-a">Click here to view
+                                            <span class="bi bi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer-a">
+                                        <ul class="card-info d-flex justify-content-around">
+                                            <li>
+                                                <h4 class="card-info-title">Area</h4>
+                                                <span>340m
+                            <sup>2</sup>
+                          </span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Beds</h4>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Baths</h4>
+                                                <span>4</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Garages</h4>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item-b swiper-slide">
+                        <div class="card-box-a card-shadow">
+                            <div class="img-box-a">
+                                <img src="{{ asset('front/img/property-10.jpg') }}" alt="" class="img-a img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-overlay-a-content">
+                                    <div class="card-header-a">
+                                        <h2 class="card-title-a">
+                                            <a href="property-single.html">204 Montal
+                                                <br /> South Bela Two</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-body-a">
+                                        <div class="price-box d-flex">
+                                            <span class="price-a">rent | $ 12.000</span>
+                                        </div>
+                                        <a href="property-single.html" class="link-a">Click here to view
+                                            <span class="bi bi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer-a">
+                                        <ul class="card-info d-flex justify-content-around">
+                                            <li>
+                                                <h4 class="card-info-title">Area</h4>
+                                                <span>340m
+                            <sup>2</sup>
+                          </span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Beds</h4>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Baths</h4>
+                                                <span>4</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="card-info-title">Garages</h4>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
                 </div>
-                <div class="col-md-6 wrap-about  ">
-                    <div class="heading-section heading-section-white pl-md-5">
-                        <span class="subheading">A propos de nous</span>
-                        <h2 class="mb-4">Bienvenue chez Movinto</h2>
+            </div>
+            <div class="propery-carousel-pagination carousel-pagination"></div>
 
-                        <p>
-                        </p>
-                        <p>
-                        </p>
-                        <p><a href="#" class="btn btn-primary py-3 px-4">Rechercher une chambre une maison ou une
-                                parcelle</a></p>
+        </div>
+    </section><!-- End Latest Properties Section -->
+
+    <!-- ======= Latest News Section ======= -->
+    <section class="section-news section-t8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                        <div class="title-box">
+                            <h2 class="title-a">Dernières parcelles</h2>
+                        </div>
+                        <div class="title-link">
+                            <a href="blog-grid.html">Toutes les parcelles
+                                <span class="bi bi-chevron-right"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--
-      <section class="ftco-section">
-       <div class="container">
-       <div class="row justify-content-center mb-5">
-                        <div class="col-md-7 text-center heading-section  ">
-                            <span class="subheading">Services</span>
-                            <h2 class="mb-3">Nos récents services</h2>
-                        </div>
-                </div>
-        <div class="row">
-         <div class="col-md-4">
-          <div class="services services-2 w-100 text-center">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
-                <div class="text w-100">
-                                         <h3 class="heading mb-2">Une cérémonie de mariage</h3>
-                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non.</p>
-                                     </div>
 
-         </div>
-
-         </div>
-         <div class="col-md-4">
-          <div class="services services-2 w-100 text-center">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
-                <div class="text w-100">
-                                        <h3 class="heading mb-2">Transport depuis l'aéroport</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non</p>
+            <div id="news-carousel" class="swiper">
+                <div class="swiper-wrapper">
+                    @foreach($lands as $land)
+                    <div class="carousel-item-c swiper-slide">
+                        <div class="card-box-b card-shadow news-box">
+                            <div class="img-box-b">
+                                <img src="{{ asset('images/properties/'.$land->image) }}" alt="" class="img-b img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-header-b">
+                                    <div class="card-category-b">
+                                        <a href="{{route('details',$land->id)}}" class="category-b">{{$land->superficie}} m2</a>
                                     </div>
-
-         </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="services services-2 w-100 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-                                    <div class="text w-100">
-                                        <h3 class="heading mb-2">Location pour un tour complet de ville</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper elit sapien, sit amet elementum purus egestas non</p>
+                                    <div class="card-title-b">
+                                        <h2 class="title-2">
+                                            <a href="{{route('details',$land->id)}}">{{$land->intitule}}
+                                                </a>
+                                        </h2>
                                     </div>
-
-
-
+                                    <div class="card-date">
+                                        {{-- <span class="date-b">18 Sep. 2017</span> --}}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-        </div>
-        </div>
+                    </div>
+                    @endforeach
 
-      </section> -->
+                    {{-- <div class="carousel-item-c swiper-slide">
+                        <div class="card-box-b card-shadow news-box">
+                            <div class="img-box-b">
+                                <img src="{{ asset('front/img/post-5.jpg') }}" alt="" class="img-b img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-header-b">
+                                    <div class="card-category-b">
+                                        <a href="#" class="category-b">Travel</a>
+                                    </div>
+                                    <div class="card-title-b">
+                                        <h2 class="title-2">
+                                            <a href="blog-single.html">Travel is comming
+                                                <br> new</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-date">
+                                        <span class="date-b">18 Sep. 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
 
+                    {{-- <div class="carousel-item-c swiper-slide">
+                        <div class="card-box-b card-shadow news-box">
+                            <div class="img-box-b">
+                                <img src="{{ asset('front/img/post-7.jpg') }}" alt="" class="img-b img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-header-b">
+                                    <div class="card-category-b">
+                                        <a href="#" class="category-b">Park</a>
+                                    </div>
+                                    <div class="card-title-b">
+                                        <h2 class="title-2">
+                                            <a href="blog-single.html">Park is comming
+                                                <br> new</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-date">
+                                        <span class="date-b">18 Sep. 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
 
+                    {{-- <div class="carousel-item-c swiper-slide">
+                        <div class="card-box-b card-shadow news-box">
+                            <div class="img-box-b">
+                                <img src="{{ asset('front/img/post-3.jpg') }}" alt="" class="img-b img-fluid">
+                            </div>
+                            <div class="card-overlay">
+                                <div class="card-header-b">
+                                    <div class="card-category-b">
+                                        <a href="#" class="category-b">Travel</a>
+                                    </div>
+                                    <div class="card-title-b">
+                                        <h2 class="title-2">
+                                            <a href="#">Travel is comming
+                                                <br> new</a>
+                                        </h2>
+                                    </div>
+                                    <div class="card-date">
+                                        <span class="date-b">18 Sep. 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
 
-
-
-
-
-    <!-- <section class="ftco-counter ftco-section img bg-light" id="section-counter">
-       <div class="overlay"></div>
-        <div class="container">
-        <div class="row">
-              <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
-                <div class="block-18">
-                  <div class="text text-border d-flex align-items-center">
-                    <strong class="number" data-number="60">13</strong>
-                    <span>Années  <br>d'expérience</span>
-                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
-                <div class="block-18">
-                  <div class="text text-border d-flex align-items-center">
-                    <strong class="number" data-number="1090">43</strong>
-                    <span>de voitures <br>au total</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 justify-content-center counter-wrap  ">
-                <div class="block-18">
-                  <div class="text text-border d-flex align-items-center">
-                    <strong class="number" data-number="2590">151</strong>
-                    <span>De clients  <br>Satisfaits</span>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+            <div class="news-carousel-pagination carousel-pagination"></div>
         </div>
-        </section>	 -->
+    </section><!-- End Latest News Section -->
+
+
 @endsection
