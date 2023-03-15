@@ -56,7 +56,7 @@
                             <h2 class="title-a">Dernières maisons </h2>
                         </div>
                         <div class="title-link">
-                            <a href="property-grid.html">Toutes les maisons
+                            <a href="/homes">Toutes les maisons
                                 <span class="bi bi-chevron-right"></span>
                             </a>
                         </div>
@@ -270,7 +270,7 @@
                             <h2 class="title-a">Dernières parcelles</h2>
                         </div>
                         <div class="title-link">
-                            <a href="blog-grid.html">Toutes les parcelles
+                            <a href="/lands">Toutes les parcelles
                                 <span class="bi bi-chevron-right"></span>
                             </a>
                         </div>

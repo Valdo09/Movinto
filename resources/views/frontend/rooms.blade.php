@@ -16,7 +16,7 @@
                     <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#">Accueil</a>
+                                <a href="/accueil">Accueil</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Chambres
@@ -58,7 +58,7 @@
                                 <div class="card-footer-a">
                                     <ul class="card-info d-flex justify-content-around">
                                         <li>
-                                            <h4 class="card-info-title">Superficiea</h4>
+                                            <h4 class="card-info-title">Superficie</h4>
                                             <span>{{$room->superficie}} m 
                           <sup>2</sup>
                         </span>

@@ -48,13 +48,13 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Female">
+                            <input class="form-check-input" type="radio" name="sex" id="exampleRadios2" value="Female">
                             <label class="form-check-label" for="exampleRadios2">
                                 Féminin
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Other">
+                            <input class="form-check-input" type="radio" name="sex" id="exampleRadios2" value="Other">
                             <label class="form-check-label" for="exampleRadios2">
                                 Autre
                             </label>

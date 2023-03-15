@@ -16,7 +16,7 @@
                     <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#">Accueil</a>
+                                <a href="/accueil">Accueil</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                               Maisons

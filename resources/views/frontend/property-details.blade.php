@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <div class="summary-list">
-                                <h4 class="description color-text-a">{{App\Models\User::where('id',$property->owner_id)->first()->first_name." ".App\Models\User::where('id',$property->owner_id)->first()->last_name }}</h4>
+                                <a class="description color-text-a" target="_blank" href="https://wa.me/{{App\Models\User::where('id',$property->owner_id)->first()->phone_number}}?text=Bonjour à vous.J'ai vu votre {{$property->intitule}} sur la plateforme Movinto et je suis intéressé">{{App\Models\User::where('id',$property->owner_id)->first()->first_name." ".App\Models\User::where('id',$property->owner_id)->first()->last_name }}</a>
                             </div>
                         </div>
 

@@ -8,17 +8,17 @@ class Usercontroller extends Controller
 {
     public function showOwners()
     {
-        $owners=User::where('role_id',2)->get();
+        $owners=User::where('role_id',2)->paginate(5);
         return view('dashboard.users.owners',compact('owners'));
     }
     public function showCustomers()
     {
-        $customers=User::where('role_id',3)->get();
+        $customers=User::where('role_id',3)->paginate(5);
         return view('dashboard.users.customers',compact('customers'));
     }
     public function showAllUsers()
     {
-        $users=User::all();
+        $users=User::paginate(5);
         
         return view('dashboard.users.index',compact('users'));
     }
