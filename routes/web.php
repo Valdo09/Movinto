@@ -7,7 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\Usercontroller;
-
+use App\Http\Controllers\VerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +67,7 @@ Route::get('/backend/edit', function (){
 
 
 Route::get('/accueil',[PropertyController::class,'index'])->name('accueil');
+Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
 
 Route::redirect('/','/accueil');
 Route::get('/rooms',[PropertyController::class,'listRooms'])->name('rooms.listing');

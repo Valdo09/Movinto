@@ -27,13 +27,13 @@
 @endsection
 
 @section('content')
-    @if (\Session::has('message'))
+    @if (session()->has('success'))
 
-        <div class="alert alert-sucess">{{\Session::get('message') }}</div>
+        <div class="alert alert-success">{{session()->get('success') }}</div>
 
     @endif
     <div class="card card-body border-0 shadow table-wrapper table-responsive mt-4">
-        <table class="table table-hover">
+        <table class="table table-hover" id="homes-table">
             <thead>
             <tr>
                 <th class="border-gray-200">#</th>
@@ -88,4 +88,7 @@
         {{ $homes->links('backend.layouts.paginate') }}
 
     </div>
+    <script>
+        
+    </script>
 @endsection

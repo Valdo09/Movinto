@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use App\Notifications\VerifyEmail;
 
 class RegisterController extends Controller
 {
@@ -30,9 +31,9 @@ class RegisterController extends Controller
         $user = User::create($request->validated());
         
 
-        auth()->login($user);
+         auth()->login($user);
+         $user->sendEmailVerificationNotification(new VerifyEmail);
 
-        return redirect()->route('properties.show');
-    }
+        return redirect()->route('/home');    }
 }
 

@@ -19,8 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('back/assets/img/favicon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{ asset('back/assets/img/favicon/site.webmanifest')}}">
     <link rel="mask-icon" href="{{ asset('back/assets/img/favicon/safari-pinned-tab.svg')}}" color="#ffffff">
+    <link rel="stylesheet" href="  //cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"> 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    
 
     @include('backend.layouts.css')
 
@@ -45,4 +47,5 @@
 @include('backend.layouts.js')
 </body>
 
+<script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </html>
